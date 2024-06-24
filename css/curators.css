@@ -1,0 +1,51 @@
+.curators__socials-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.curators__item-left {
+  width: 225px;
+  height: 225px;
+  overflow: hidden;
+  border-radius: 16px;
+  min-width: 225px;
+  position: relative;
+}
+
+.curators__subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 88px;
+  margin-top: 16px;
+}
+
+.curators__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.curators__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f5e8;
+  border-radius: 32px;
+  padding: 40px;
+  gap: 20px;
+}
+
+.curators__item-name {
+  margin-bottom: 20px;
+}
+
+.curators__socials {
+  position: absolute;
+  z-index: 100;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+  gap: 2px;
+}
