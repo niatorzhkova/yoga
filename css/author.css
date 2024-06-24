@@ -1,0 +1,71 @@
+.author {
+}
+.author__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 0 70px;
+  height: inherit;
+  color: #000000;
+  align-items: center;
+}
+.author__container {
+  height: inherit;
+}
+
+.author__top-title {
+  margin-bottom: 25px;
+}
+
+.author__top-button {
+  margin-top: 30px;
+}
+
+.author__top-button::after {
+  display: inline-flex;
+  content: "";
+  background-image: url("../images/author/arrow-icon.svg");
+  background-size: 126px 126px;
+  height: 126px;
+  width: 126px;
+  position: relative;
+  top: 46px;
+}
+
+.author__photo,
+.author__top {
+  flex-basis: 50%;
+}
+
+.author__photo {
+  max-width: 626px;
+  overflow: hidden;
+  border-radius: 32px;
+  z-index: 1;
+  position: relative;
+}
+.author__photo-block {
+  position: relative;
+}
+.author__photo-block::after {
+  content: "";
+  background: url("../images/author/leaves-right.png") left top no-repeat;
+  right: -120px;
+  bottom: 20px;
+  position: absolute;
+  display: inline-block;
+  width: 182px;
+  height: 380px;
+}
+.author__photo-block::before {
+  content: "";
+  background: url("../images/author/leaves-left.png") left top no-repeat;
+  left: -120px;
+  top: 20px;
+  position: absolute;
+  display: inline-block;
+  width: 182px;
+  height: 380px;
+}
+.author__subtitle {
+  margin-bottom: 15px;
+}

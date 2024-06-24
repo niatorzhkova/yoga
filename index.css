@@ -30,7 +30,10 @@
 
 @import url(css/documents.css);
 
+@import url(css/author.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -68,6 +71,11 @@ ul {
 
 ul li {
   list-style: none;
+}
+
+section {
+  width: 99%;
+  margin: 0 auto;
 }
 
 h1,
@@ -252,11 +260,10 @@ p {
 }
 
 .subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: -0.6px;
-  line-height: 1;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37.5px;
+  color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -837,4 +844,10 @@ section.reviews {
   background-color: var(--accentYellowColor);
   color: #000000;
   font-size: 24px;
+  border: none;
+  outline: none;
+}
+
+.condensed {
+  font-family: "Roboto Condensed", sans-serif;
 }
