@@ -1,0 +1,50 @@
+.hero {
+  height: 1064px;
+  border-radius: 32px;
+  background: 78% 100% / 42% no-repeat url(../images/hero/hero-pic.webp)
+    rgba(27, 27, 28, 1);
+}
+.hero__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 200px 0 70px;
+  height: inherit;
+}
+.hero__container {
+  height: inherit;
+}
+
+.hero__top-title {
+  margin-bottom: 25px;
+}
+
+.hero__top-button {
+  margin-top: 30px;
+}
+
+.hero__top-button::after {
+  display: inline-flex;
+  content: "";
+  background-image: url("../images/hero/arrow-icon.svg");
+  background-size: 126px 126px;
+  height: 126px;
+  width: 126px;
+  position: relative;
+  top: 46px;
+}
+
+.hero__bottom-left {
+  width: 48px;
+  height: 48px;
+}
+
+.hero__bottom {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.hero__bottom-label {
+  margin-bottom: 5px;
+}
