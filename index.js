@@ -213,3 +213,87 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+$(document).ready(function () {
+  $.getJSON("./json/reviews.json", function (data) {
+    console.log(data, "data json");
+    function populateProducts() {
+      let firstTemplate = "";
+      let secondTemplate = "";
+      let thirdTemplate = "";
+      for (let index = 0; index < data.first.length; index++) {
+        firstTemplate +=
+          // "<div>Name: " + data.products[index].name + "</div>" +
+          `
+            <li class="reviews__item">
+              <div class="reviews__item-title">${data.first[index].title}</div>
+              <p class="reviews__item-text">${data.first[index].text}</p>
+              <div class="reviews__item-footer">
+                <div class="reviews__item-footer__name">${data.first[index].name}</div>
+                <div class="reviews__item-footer__link">
+                  <a href="${data.first[index].link}"></a>
+                </div>
+              </div>
+            </li>
+         `;
+      }
+      for (let index = 0; index < data.second.length; index++) {
+        secondTemplate +=
+          // "<div>Name: " + data.products[index].name + "</div>" +
+          `
+            <li class="reviews__item">
+              <div class="reviews__item-title">${data.second[index].title}</div>
+              <p class="reviews__item-text">${data.second[index].text}</p>
+              <div class="reviews__item-footer">
+                <div class="reviews__item-footer__name">${data.second[index].name}</div>
+                <div class="reviews__item-footer__link">
+                  <a href="${data.second[index].link}"></a>
+                </div>
+              </div>
+            </li>
+         `;
+      }
+      for (let index = 0; index < data.third.length; index++) {
+        if (data.third[index].img) {
+          thirdTemplate +=
+            // "<div>Name: " + data.products[index].name + "</div>" +
+            `
+            <li class="reviews__item with-img" style="background: center / contain no-repeat url('${data.third[index].img}');     min-height: 490px;">
+              <div class="reviews__button-container">
+                <button class="reviews__button round__btn"></button>
+              </div>
+              <div class="reviews__item-footer">
+                <div class="reviews__item-footer__name">${data.third[index].name}</div>
+                <div class="reviews__item-footer__link">
+                  <a href="${data.third[index].link}"></a>
+                </div>
+              </div>
+            </li>
+         `;
+        } else {
+          thirdTemplate +=
+            // "<div>Name: " + data.products[index].name + "</div>" +
+            `
+            <li class="reviews__item">
+              <div class="reviews__item-title">${data.third[index].title}</div>
+              <p class="reviews__item-text">${data.third[index].text}</p>
+              <div class="reviews__item-footer">
+                <div class="reviews__item-footer__name">${data.third[index].name}</div>
+                <div class="reviews__item-footer__link">
+                  <a href="${data.third[index].link}"></a>
+                </div>
+              </div>
+          
+            </li>
+         `;
+        }
+      }
+      document.getElementById("reviews__list-left").innerHTML = firstTemplate;
+      document.getElementById("reviews__list-middle").innerHTML =
+        secondTemplate;
+      document.getElementById("reviews__list-right").innerHTML = thirdTemplate;
+    }
+
+    populateProducts();
+  });
+});

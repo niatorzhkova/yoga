@@ -1,0 +1,10 @@
+.reviews__block {
+  display: flex;
+  gap: 25px;
+}
+
+.reviews__list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px;
+}
