@@ -266,11 +266,11 @@ p {
 }
 
 .round__btn {
-  background: transparent;
-  border: 0.38px solid #fff;
+  border: none;
   border-radius: 100%;
-  width: 45px;
-  height: 45px;
+  width: 128px;
+  height: 128px;
+  background-color: #ffffff;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +298,7 @@ p {
 }
 
 .round__btn:hover {
-  background-color: #ffffff;
+  background-color: #ffe146;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
@@ -323,7 +323,7 @@ p {
 .round__btn:active svg {
   color: #fff;
 }
-
+/* 
 @media (min-width: 1200px) {
   .round__btn {
     width: 62px;
@@ -334,20 +334,20 @@ p {
     width: 21px;
     height: 21px;
   }
-}
+} */
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
   .round__btn {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #fff;
+    width: 128px;
+    height: 128px;
+    background-color: #ffffff;
   }
 
   .round__btn svg {
     width: 33px;
     height: 33px;
   }
-}
+} */
 
 .rectangle__button {
   background: transparent;
