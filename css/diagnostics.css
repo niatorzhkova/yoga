@@ -1,0 +1,31 @@
+.diagnostics {
+  .diagnostics__right {
+    max-width: 699px;
+  }
+  .diagnostics__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+  }
+  .diagnostics__subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .diagnostics__title {
+    margin-bottom: 40px;
+  }
+
+  .diagnostics__button::after {
+    display: inline-flex;
+    content: "";
+    background-image: url(../images/hero/arrow-icon.svg);
+    background-size: 126px 126px;
+    height: 126px;
+    width: 126px;
+    position: relative;
+    top: 46px;
+  }
+}
