@@ -216,8 +216,7 @@ menuItems.forEach(function (menuItem) {
 
 $(document).ready(function () {
   $.getJSON("./json/reviews.json", function (data) {
-    console.log(data, "data json");
-    function populateProducts() {
+    function mapReviews() {
       let firstTemplate = "";
       let secondTemplate = "";
       let thirdTemplate = "";
@@ -240,9 +239,7 @@ $(document).ready(function () {
             </li>
          `;
         } else {
-          firstTemplate +=
-            // "<div>Name: " + data.products[index].name + "</div>" +
-            `
+          firstTemplate += `
             <li class="reviews__item">
               <div class="subtitle reviews__item-title condensed ">${data.first[index].title}</div>
               <p class="standard-text reviews__item-text">${data.first[index].text}</p>
@@ -289,9 +286,7 @@ $(document).ready(function () {
             </li>
          `;
         } else {
-          thirdTemplate +=
-            // "<div>Name: " + data.products[index].name + "</div>" +
-            `
+          thirdTemplate += `
             <li class="reviews__item">
               <div class="subtitle reviews__item-title condensed ">${data.third[index].title}</div>
               <p class="standard-text reviews__item-text">${data.third[index].text}</p>
@@ -312,6 +307,69 @@ $(document).ready(function () {
       document.getElementById("reviews__list-right").innerHTML = thirdTemplate;
     }
 
-    populateProducts();
+    mapReviews();
+  });
+
+  $.getJSON("./json/cases.json", function (data) {
+    function mapCases() {
+      let template = "";
+
+      for (let index = 0; index < data.students.length; index++) {
+        template += `
+                   <li class="cases__item">
+                      <div class="cases__item-left">
+                        <div class="cases__item-photo">
+                          <img src="${data.students[index].photo}" />
+                        </div>
+                        <div class="cases__item-name">${data.students[index].name}</div>
+                        <div class="cases__item-desc">${data.students[index].shortDesc}</div>
+                      </div>
+                      <div class="cases__item-middle">
+                        <div class="cases__item-header">
+                          <span>Точка А</span>
+                          <img src="./images/cases/arrow-icon-1.svg" />
+                        </div>
+                        <div class="cases__item-description">
+                          ${data.students[index].pointATxt}
+                        </div>
+                      </div>
+                      <div class="cases__item-right">
+                        <div class="cases__item-header">
+                          <span>Точка Б</span>
+                          <img src="./images/cases/arrow-icon-2.svg" />
+                        </div>
+                        <div class="cases__item-description">
+                          ${data.students[index].pointBTxt}
+                        </div>
+                      </div>
+                    </li>  
+         `;
+      }
+      document.querySelector(".cases__list").innerHTML = template;
+    }
+
+    mapCases();
+
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      loop: true,
+      margin: 0,
+      dots: false,
+      touchDrag: true,
+      autoplay: 0.5,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+      },
+    });
+    $(".cases__header-btn-right").click(function () {
+      owl.trigger("next.owl.carousel");
+    });
+
+    $(".cases__header-btn-left").click(function () {
+      owl.trigger("prev.owl.carousel");
+    });
   });
 });
