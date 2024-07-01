@@ -58,41 +58,4 @@
     justify-content: space-between;
     margin-bottom: 40px;
   }
-
-  .cases__header-btn-left {
-    background: url(../images/cases/slider-arrow-icon.svg) center center
-        no-repeat,
-      var(--darkBgColor);
-    outline: none;
-    width: 56px;
-    height: 56px;
-    border: none;
-    border-radius: 50%;
-    stroke: #fff;
-    color: #fff;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-  .cases__header-btn-right {
-    background: url(../images/cases/slider-arrow-icon.svg) center center
-        no-repeat,
-      var(--darkBgColor);
-    transform: rotate(180deg);
-    outline: none;
-    width: 56px;
-    height: 56px;
-    border: none;
-    border-radius: 50%;
-    stroke: #fff;
-    color: #fff;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-  .cases__header-btn-left:hover,
-  .cases__header-btn-right:hover {
-    background: url(../images/cases/slider-arrow-icon-dark.svg) center center
-        no-repeat,
-      var(--accentYellowColor);
-    transition: 0.4s;
-  }
 }

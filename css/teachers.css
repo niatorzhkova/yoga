@@ -1,0 +1,20 @@
+.teachers {
+  .teachers__item {
+    border-radius: 24px;
+  }
+
+  .teachers__list {
+    width: 100vw;
+  }
+  .teachers__subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .teachers__socials {
+    display: flex;
+    gap: 5px;
+  }
+}

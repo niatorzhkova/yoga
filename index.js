@@ -350,7 +350,7 @@ $(document).ready(function () {
 
     mapCases();
 
-    var owl = $(".owl-carousel");
+    var owl = $(".cases__list");
     owl.owlCarousel({
       loop: true,
       margin: 0,
@@ -369,6 +369,57 @@ $(document).ready(function () {
     });
 
     $(".cases__header-btn-left").click(function () {
+      owl.trigger("prev.owl.carousel");
+    });
+  });
+
+  // Преподаватели
+
+  $.getJSON("./json/teachers.json", function (data) {
+    function mapTeachers() {
+      let template = "";
+
+      for (let index = 0; index < data.teachers.length; index++) {
+        template += `
+                 <li class="teachers__item" style="background: center / contain no-repeat url('${data.teachers[index].photo}'); height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">
+                       <div class="teachers__socials">
+                        <a class="icons__socials-link" href="#"
+                          ><img src="./images/icons/insta.png"
+                        /></a>
+                        <a class="icons__socials-link" href="#"
+                          ><img src="./images/icons/youtube.png"
+                        /></a>
+                      </div>
+                      <div class="teachers__item-name">${data.teachers[index].name}</div>
+                      <div class="teachers__item-desc">${data.teachers[index].shortDesc}</div>
+                    </div>
+                  </li>  
+       `;
+      }
+      document.querySelector(".teachers__list").innerHTML = template;
+    }
+
+    mapTeachers();
+
+    var owl = $(".teachers__list");
+    owl.owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: false,
+      touchDrag: true,
+      autoplay: 0.5,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 5,
+        },
+      },
+    });
+    $(".teachers__header-btn-right").click(function () {
+      owl.trigger("next.owl.carousel");
+    });
+
+    $(".teachers__header-btn-left").click(function () {
       owl.trigger("prev.owl.carousel");
     });
   });
