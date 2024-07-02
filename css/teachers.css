@@ -1,6 +1,10 @@
 .teachers {
   .teachers__item {
     border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
   }
 
   .teachers__list {
@@ -16,5 +20,25 @@
   .teachers__socials {
     display: flex;
     gap: 5px;
+    align-self: flex-end;
+  }
+
+  .teachers__subtitle {
+    font-weight: 400;
+  }
+
+  .teachers__item-info {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .teachers__item-name {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .teachers__item-desc {
+    font-size: 18px;
   }
 }
