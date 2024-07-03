@@ -196,7 +196,6 @@ const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
-  console.log("click");
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
@@ -474,56 +473,120 @@ $(document).ready(function () {
     mapProgrammeInfo();
   });
 
-  const accordion = document.getElementsByClassName("accordion__item");
+  $.getJSON("./json/programme.json", function (data) {
+    function mapProgrammeAccordion() {
+      let template = "";
+      let innerTemplate = "";
+      for (let index = 0; index < data.accordion.length; index++) {
+        template += `
+                     <li
+  class="programme__accordion-item accordion__item"
 
-  for (i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      const elBlock = this.querySelector(".accordion-content");
-      const elBlocks = document.getElementsByClassName("accordion-content");
-      function closeAll(e) {
-        if (!this.contains(e.target) && this.classList.contains("active")) {
+>
+  <div class="accordion__header">
+    <div class="accordion__header-left">
+      <div class="accordion__index subtitle">${index + 1}</div>
+      <div
+        class="accordion__title subtitle accordion-label"
+      >
+       ${data.accordion[index].title}
+      </div>
+    </div>
+    <div class="accordion__header-right">
+      <button class="accordion__button">
+        <svg
+          width="14"
+          height="8"
+          viewBox="0 0 14 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13 7L7 1L1 7"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="accordion__answer-container">
+    <div
+      class="accordion__answer accordion-content"
+      style="height: 0px"
+    >
+      <ul class="accordion__answer-list">
+      ${data.accordion[index].list.map(
+        (x) => `<li class="accordion__answer-item">${x} </li>`
+      )}
+      </ul>
+    </div>
+  </div>
+</li>
+         `;
+        document.querySelector(".programme__accordion").innerHTML = template;
+      }
+    }
+
+    mapProgrammeAccordion();
+
+    try {
+      const accordion = document.getElementsByClassName("accordion__item");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
           this.classList.toggle("active");
-          console.log("закрытие всех");
+          const elBlock = this.querySelector(".accordion-content");
+          const elBlocks = document.getElementsByClassName("accordion-content");
+          function closeAll(e) {
+            if (!this.contains(e.target) && this.classList.contains("active")) {
+              this.classList.toggle("active");
 
-          for (var i = 0; i < elBlocks.length; i++) {
-            elBlocks[i].style.height = `${elBlocks[i].scrollHeight}px`;
-            window
-              .getComputedStyle(elBlocks[i], null)
-              .getPropertyValue("height");
-            elBlocks[i].style.height = "0";
+              for (var i = 0; i < elBlocks.length; i++) {
+                elBlocks[i].style.height = `${elBlocks[i].scrollHeight}px`;
+                window
+                  .getComputedStyle(elBlocks[i], null)
+                  .getPropertyValue("height");
+                elBlocks[i].style.height = "0";
+              }
+              elBlock.addEventListener("transitionend", () => {
+                if (elBlock.style.height !== "0px") {
+                  elBlock.style.height = "auto";
+                }
+              });
+            }
+          }
+          window.addEventListener("mouseup", closeAll.bind(this));
+
+          if (elBlock.style.height === "0px") {
+            for (var i = 0; i < elBlocks.length; i++) {
+              elBlocks[i].style.height = `${elBlocks[i].scrollHeight}px`;
+              window
+                .getComputedStyle(elBlocks[i], null)
+                .getPropertyValue("height");
+              elBlocks[i].style.height = "0";
+            }
+
+            // открытие
+            elBlock.style.height = `${elBlock.scrollHeight}px`;
+          } else {
+            // закрытие
+
+            elBlock.style.height = `${elBlock.scrollHeight}px`;
+            window.getComputedStyle(elBlock, null).getPropertyValue("height");
+            elBlock.style.height = "0";
           }
           elBlock.addEventListener("transitionend", () => {
             if (elBlock.style.height !== "0px") {
               elBlock.style.height = "auto";
             }
           });
-        }
+        });
       }
-      window.addEventListener("mouseup", closeAll.bind(this));
-
-      if (elBlock.style.height === "0px") {
-        for (var i = 0; i < elBlocks.length; i++) {
-          elBlocks[i].style.height = `${elBlocks[i].scrollHeight}px`;
-          window.getComputedStyle(elBlocks[i], null).getPropertyValue("height");
-          elBlocks[i].style.height = "0";
-        }
-
-        console.log("открытие");
-        // открытие
-        elBlock.style.height = `${elBlock.scrollHeight}px`;
-      } else {
-        // закрытие
-        console.log("закрытие");
-        elBlock.style.height = `${elBlock.scrollHeight}px`;
-        window.getComputedStyle(elBlock, null).getPropertyValue("height");
-        elBlock.style.height = "0";
-      }
-      elBlock.addEventListener("transitionend", () => {
-        if (elBlock.style.height !== "0px") {
-          elBlock.style.height = "auto";
-        }
-      });
-    });
-  }
+    } catch (e) {
+      console.log(e);
+    }
+  });
 });

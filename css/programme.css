@@ -1,13 +1,20 @@
 .programme {
-  .programme-info__label {
+  .programme-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .programme__block {
     display: flex;
+    gap: 40px;
   }
 
   .programme-info__pic {
     width: 538px;
+    margin-top: 40px;
+    position: relative;
+    left: -10%;
   }
 
   .programme-info__data {
@@ -28,6 +35,10 @@
     background-color: #ffffff;
     border-radius: 24px;
     padding: 24px;
+  }
+
+  .accordion__answer-item::marker {
+    color: rgba(0, 0, 0, 0.8);
   }
   .accordion__answer-item {
     list-style-type: disc;

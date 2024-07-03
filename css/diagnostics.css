@@ -5,8 +5,10 @@
   .diagnostics__block {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 20px;
     align-items: center;
+    background-color: #383835;
+    border-radius: 32px;
   }
   .diagnostics__subtitle {
     color: rgba(255, 255, 255, 0.8);
@@ -27,5 +29,9 @@
     width: 126px;
     position: relative;
     top: 46px;
+  }
+
+  .diagnostics__left {
+    padding-left: 60px;
   }
 }
