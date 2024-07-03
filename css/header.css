@@ -209,7 +209,7 @@
   justify-content: space-between;
   padding: 0 20px;
   height: 60px;
-  position: fixed;
+  position: static;
   right: 0;
   left: 0;
   padding: 40px 30px;
@@ -238,7 +238,7 @@
   transform: translateY(calc(-100% + -60px));
   opacity: 0;
   transition: opacity 0.2s;
-  top: 60px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;

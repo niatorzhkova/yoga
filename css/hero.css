@@ -1,8 +1,11 @@
+.dark-bg-section.hero-section {
+  background-color: #1b1b1c;
+}
+
 .hero {
   height: 1064px;
   color: #ffffff;
-  background: 78% 100% / 42% no-repeat url(../images/hero/hero-pic.webp)
-    rgba(27, 27, 28, 1);
+  background: 78% 100% / 42% no-repeat url(../images/hero/hero-pic.webp);
 
   .hero__block {
     display: flex;
