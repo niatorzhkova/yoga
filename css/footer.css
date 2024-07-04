@@ -26,6 +26,8 @@
 .footer__block {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 50px;
 }
 
 .footer__menu {
@@ -77,4 +79,8 @@
   display: flex;
   gap: 5px;
   margin-top: 30px;
+}
+
+.footer-section {
+  padding-top: 0 !important;
 }

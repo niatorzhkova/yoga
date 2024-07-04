@@ -37,54 +37,6 @@
     padding: 24px;
   }
 
-  .accordion__answer-item::marker {
-    color: rgba(0, 0, 0, 0.8);
-  }
-  .accordion__answer-item {
-    list-style-type: disc;
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .accordion__answer-list {
-    padding: 0 20px;
-  }
-  .accordion__header-left {
-    display: flex;
-    gap: 20px;
-  }
-
-  .accordion__index {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-  .accordion__header {
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .accordion__button {
-    width: 40px;
-    height: 40px;
-    background-color: var(--lightBgColor);
-    border-radius: 50%;
-    border: none;
-    outline: none;
-  }
-  .accordion-content {
-    /* margin-top: -100%; */
-
-    transition: height 500ms ease;
-    overflow: hidden;
-  }
-
   .programme__accordion {
     display: flex;
     flex-direction: column;

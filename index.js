@@ -476,7 +476,7 @@ $(document).ready(function () {
   $.getJSON("./json/programme.json", function (data) {
     function mapProgrammeAccordion() {
       let template = "";
-      let innerTemplate = "";
+
       for (let index = 0; index < data.accordion.length; index++) {
         template += `
                      <li
@@ -588,5 +588,57 @@ $(document).ready(function () {
     } catch (e) {
       console.log(e);
     }
+  });
+  $.getJSON("./json/questions.json", function (data) {
+    function mapQuestionsAccordion() {
+      let template = "";
+
+      for (let index = 0; index < data.accordion.length; index++) {
+        template += `
+                        <li class="questions__accordion-item accordion__item">
+                      <div class="accordion__header">
+                        <div class="accordion__header-left">
+                          <div
+                            class="accordion__title subtitle accordion-label"
+                          >
+                             ${data.accordion[index].title} 
+                           
+                          </div>
+                        </div>
+                        <div class="accordion__header-right">
+                          <button class="accordion__button">
+                            <svg
+                              width="14"
+                              height="8"
+                              viewBox="0 0 14 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13 7L7 1L1 7"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="accordion__answer-container">
+                        <div
+                          class="accordion__answer accordion-content"
+                          style="height: 0px"
+                        >
+                           ${data.accordion[index].answer} 
+                        </div>
+                      </div>
+                    </li>
+       `;
+        document.querySelector(".questions__list").innerHTML = template;
+      }
+    }
+
+    mapQuestionsAccordion();
   });
 });

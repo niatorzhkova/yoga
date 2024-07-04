@@ -55,7 +55,6 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -0.7px;
 }
 
 @media (min-width: 768px) {
@@ -303,7 +302,6 @@
 
 .menu .menuItem {
   font-size: 18px;
-  letter-spacing: -0.1px;
   padding: 11px 0;
   font-weight: 500;
 }
@@ -321,7 +319,6 @@
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: -0.5px;
   line-height: 1.1;
 }
 
