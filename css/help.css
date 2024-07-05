@@ -1,3 +1,7 @@
+.section.help {
+  padding-bottom: 50px;
+}
+
 .help__block {
   display: flex;
   justify-content: space-between;
@@ -41,7 +45,7 @@
 }
 
 .help__item {
-  padding: 40px;
+  padding: 35px;
   background: #f9f5e8;
   border-radius: 32px;
 }
@@ -58,5 +62,5 @@
 }
 
 .help__item-title {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }

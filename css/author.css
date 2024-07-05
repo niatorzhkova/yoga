@@ -2,18 +2,17 @@
 }
 .author__block {
   display: flex;
-  justify-content: space-between;
-  padding: 200px 0 70px;
+  padding: 20px 0 0;
   height: inherit;
   color: #000000;
-  align-items: center;
+  gap: 150px;
 }
 .author__container {
   height: inherit;
 }
 
 .author__top-title {
-  margin-bottom: 25px;
+  margin-bottom: 38px;
 }
 
 .author__top-button {
@@ -31,9 +30,11 @@
   top: 46px;
 }
 
-.author__photo,
-.author__top {
+.author__photo {
   flex-basis: 50%;
+}
+.author__top {
+  flex-basis: 45%;
 }
 
 .author__photo {
@@ -48,24 +49,32 @@
 }
 .author__photo-block::after {
   content: "";
-  background: url("../images/author/leaves-right.png") left top no-repeat;
-  right: -120px;
-  bottom: 20px;
+  background: url("../images/author/leaves-right.png") no-repeat;
+  right: -160px;
+  bottom: -30px;
   position: absolute;
   display: inline-block;
-  width: 182px;
-  height: 380px;
+  width: 241px;
+  height: 357px;
 }
 .author__photo-block::before {
   content: "";
-  background: url("../images/author/leaves-left.png") left top no-repeat;
-  left: -120px;
-  top: 20px;
+  background: url("../images/author/leaves-left.png") no-repeat;
+  left: -135px;
+  top: 65px;
   position: absolute;
   display: inline-block;
   width: 182px;
   height: 380px;
 }
 .author__subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.author__top-desc {
+  padding-top: 135px;
+}
+
+.author__top-text {
+  line-height: 28px !important;
 }

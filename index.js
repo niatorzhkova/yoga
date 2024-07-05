@@ -433,10 +433,10 @@ $(document).ready(function () {
     var owl = $(".teachers__list");
     owl.owlCarousel({
       loop: true,
-      margin: 20,
+      margin: 15,
       dots: false,
       touchDrag: true,
-      autoplay: 0.5,
+      // autoplay: 0.5,
       autoplayHoverPause: true,
       responsive: {
         0: {

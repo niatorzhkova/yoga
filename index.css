@@ -30,7 +30,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   line-height: 1.1;
   -webkit-font-smoothing: antialiased;
@@ -133,7 +133,7 @@ p {
 }
 
 .page .container {
-  max-width: 1520px;
+  max-width: 1504px;
   margin: 0 auto;
   position: relative;
   width: 97%;
@@ -159,7 +159,7 @@ p {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 100px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +193,7 @@ p {
   line-height: 0.9;
   font-weight: 400;
   color: #090b09;
+  /* letter-spacing: -3.2px; */
 }
 
 @media (min-width: 768px) {
@@ -221,6 +222,7 @@ p {
   font-size: 17px;
   line-height: 16px;
   color: #ffffff;
+  /* letter-spacing: -2.1px; */
 }
 
 /* @media (min-width: 768px) {
@@ -249,6 +251,7 @@ p {
   font-size: 32px;
   line-height: 37.5px;
   color: #000000;
+  /* letter-spacing: -1.5px; */
 }
 
 @media (min-width: 768px) {
@@ -632,7 +635,7 @@ section.reviews {
   section.learn,
   section.programme,
   section.reviews {
-    padding: 82px 0;
+    padding: 125px 0;
     gap: 62px;
   }
 
@@ -816,8 +819,9 @@ section.reviews {
 
 .standard-text {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
+  /* letter-spacing: -1.3px; */
 }
 
 .main-button {

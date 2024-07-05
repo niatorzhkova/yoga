@@ -1,3 +1,7 @@
+.section.curators {
+  padding: 125px 0 120px;
+}
+
 .curators__item-left {
   width: 225px;
   height: 225px;
@@ -10,8 +14,8 @@
 .curators__subtitle {
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 88px;
-  margin-top: 16px;
+  margin-bottom: 85px;
+  margin-top: 20px;
 }
 
 .curators__list {
@@ -24,10 +28,9 @@
 .curators__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #f9f5e8;
   border-radius: 32px;
-  padding: 40px;
+  padding: 35px;
   gap: 20px;
 }
 
