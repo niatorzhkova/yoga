@@ -833,6 +833,12 @@ section.reviews {
   border: none;
   outline: none;
   font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.main-button:hover {
+  background-color: #ff9900;
 }
 
 .condensed {
