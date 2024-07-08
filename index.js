@@ -518,9 +518,9 @@ $(document).ready(function () {
       style="height: 0px"
     >
       <ul class="accordion__answer-list">
-      ${data.accordion[index].list.map(
-        (x) => `<li class="accordion__answer-item">${x} </li>`
-      )}
+      ${data.accordion[index].list
+        .map((x) => `<li class="accordion__answer-item">${x}</li>`)
+        .join("")}
       </ul>
     </div>
   </div>

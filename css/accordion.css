@@ -12,7 +12,7 @@
 }
 .accordion__header-left {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .accordion__index {
