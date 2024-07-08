@@ -370,7 +370,7 @@ $(document).ready(function () {
       margin: 0,
       dots: false,
       touchDrag: true,
-      autoplay: 0.5,
+      // autoplay: 0.5,
       autoplayHoverPause: true,
       responsive: {
         0: {
