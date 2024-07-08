@@ -426,7 +426,10 @@ $(document).ready(function () {
                     </div>
 
                     </div>
-                    <div class="teachers__item-hover" style=" height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">${data.teachers[index].fullDesc}</div>
+                    <div class="teachers__item-hover" style=" height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">
+                    <div class="teachers__item-hover__name">${data.teachers[index].name}</div>
+                    <div class="teachers__item-hover__fulldesc">${data.teachers[index].fullDesc}</div>
+                    </div>
                   </li>  
        `;
       }

@@ -25,7 +25,7 @@
     position: absolute;
     /* visibility: hidden; */
     opacity: 0;
-    transition: 0.4s;
+    transition: opacity 0.4s;
     top: 0;
     left: 0;
     right: 0;
@@ -38,7 +38,7 @@
     .teachers__item-no-hover {
       position: absolute;
       /* visibility: hidden; */
-      transition: 0.4s;
+      transition: opacity 0.4s;
       opacity: 0;
       top: 0;
       left: 0;
@@ -60,13 +60,13 @@
       width: inherit;
       padding: 12px 15px;
       opacity: 100%;
-      transition: 0.4s;
+      transition: opacity 0.4s;
       overflow: hidden;
       border-radius: 24px;
       color: #000000;
       font-weight: 400;
       font-size: 20px;
-      padding: 24px;
+      padding: 32px 30px;
     }
   }
   .teachers__title {
@@ -112,4 +112,10 @@
 .section.teachers {
   padding: 115px 0;
   gap: 33px;
+}
+
+.teachers__item-hover__name {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 22px;
 }
