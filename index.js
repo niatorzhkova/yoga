@@ -485,7 +485,7 @@ $(document).ready(function () {
 >
   <div class="accordion__header">
     <div class="accordion__header-left">
-      <div class="accordion__index subtitle">${index + 1}</div>
+      <div class="accordion__index">${index + 1}</div>
       <div
         class="accordion__title subtitle accordion-label"
       >
@@ -531,9 +531,10 @@ $(document).ready(function () {
     }
 
     mapProgrammeAccordion();
-
     try {
-      const accordion = document.getElementsByClassName("accordion__item");
+      const accordion = document
+        .querySelector(".programme")
+        .getElementsByClassName("accordion__item");
 
       for (i = 0; i < accordion.length; i++) {
         accordion[i].addEventListener("click", function () {
@@ -630,7 +631,9 @@ $(document).ready(function () {
                           class="accordion__answer accordion-content"
                           style="height: 0px"
                         >
-                           ${data.accordion[index].answer} 
+                            <div class="accordion__answer__block">
+                            ${data.accordion[index].answer} 
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -640,5 +643,63 @@ $(document).ready(function () {
     }
 
     mapQuestionsAccordion();
+    try {
+      const accordion = document
+        .querySelector(".questions")
+        .getElementsByClassName("accordion__item");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          const elBlock = this.querySelector(".accordion-content");
+          const elBlocks = document.getElementsByClassName("accordion-content");
+          function closeAll(e) {
+            if (!this.contains(e.target) && this.classList.contains("active")) {
+              this.classList.toggle("active");
+
+              for (var i = 0; i < elBlocks.length; i++) {
+                elBlocks[i].style.height = `${elBlocks[i].scrollHeight}px`;
+                window
+                  .getComputedStyle(elBlocks[i], null)
+                  .getPropertyValue("height");
+                elBlocks[i].style.height = "0";
+              }
+              elBlock.addEventListener("transitionend", () => {
+                if (elBlock.style.height !== "0px") {
+                  elBlock.style.height = "auto";
+                }
+              });
+            }
+          }
+          window.addEventListener("mouseup", closeAll.bind(this));
+
+          if (elBlock.style.height === "0px") {
+            for (var i = 0; i < elBlocks.length; i++) {
+              elBlocks[i].style.height = `${elBlocks[i].scrollHeight}px`;
+              window
+                .getComputedStyle(elBlocks[i], null)
+                .getPropertyValue("height");
+              elBlocks[i].style.height = "0";
+            }
+
+            // открытие
+            elBlock.style.height = `${elBlock.scrollHeight}px`;
+          } else {
+            // закрытие
+
+            elBlock.style.height = `${elBlock.scrollHeight}px`;
+            window.getComputedStyle(elBlock, null).getPropertyValue("height");
+            elBlock.style.height = "0";
+          }
+          elBlock.addEventListener("transitionend", () => {
+            if (elBlock.style.height !== "0px") {
+              elBlock.style.height = "auto";
+            }
+          });
+        });
+      }
+    } catch (e) {
+      console.log(e);
+    }
   });
 });

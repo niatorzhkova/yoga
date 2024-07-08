@@ -27,13 +27,14 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
+  padding-top: 65px;
 }
 
 .footer__menu {
   display: flex;
-  justify-content: space-between;
-  width: 55%;
+  gap: 175px;
+  /* justify-content: space-between; */
+  width: 57%;
 }
 
 .footer__links {
@@ -49,7 +50,7 @@
 .footer__menu-title {
   font-weight: 500;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .footer__menu-left__item,
@@ -64,7 +65,7 @@
 .footer__menu-right__list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 }
 
 .footer__links-item {
@@ -77,10 +78,12 @@
 
 .footer__links-list {
   display: flex;
-  gap: 5px;
-  margin-top: 30px;
+  gap: 10px;
+  margin-top: 35px;
 }
 
 .footer-section {
   padding-top: 0 !important;
+  margin-top: 100px;
+  padding-bottom: 70px;
 }

@@ -54,11 +54,15 @@
   .accordion__title {
     font-size: 24px;
   }
-  .accordion__header {
+  /* .accordion__header {
     margin-bottom: 30px;
-  }
+  } */
   .accordion__answer-list {
     padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
   }
   .accordion__button {
     padding: 13px;

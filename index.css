@@ -218,9 +218,9 @@ p {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
+  /* font-weight: 700; */
+  /* font-size: 17px; */
+  /* line-height: 16px; */
   color: #ffffff;
   /* letter-spacing: -2.1px; */
 }
@@ -832,6 +832,7 @@ section.reviews {
   font-size: 24px;
   border: none;
   outline: none;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .condensed {
@@ -937,11 +938,19 @@ section.reviews {
 }
 
 .dark-bg-section.with-stars {
-  background: url(../images/icons/star.svg) 5% 4%/10% no-repeat,
-    url(../images/icons/star.svg) 97% 35%/14% no-repeat, #22221f;
+  background: url(../images/icons/star.svg) 14% 8%/7% no-repeat,
+    url(../images/icons/star.svg) 96% 32%/12% no-repeat, #22221f;
 }
 
 .section.cases {
   padding-top: 120px;
   padding-bottom: 115px;
+}
+
+.section.questions {
+  padding-top: 120px;
+}
+
+.section.diagnostics {
+  padding-top: 195px;
 }
