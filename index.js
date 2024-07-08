@@ -395,7 +395,9 @@ $(document).ready(function () {
 
       for (let index = 0; index < data.teachers.length; index++) {
         template += `
-                 <li class="teachers__item" style="background: center / cover no-repeat url('${data.teachers[index].photo}'); height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">
+                 <li class="teachers__item" style=" height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">
+<div class="teachers__item-no-hover" style="background: center / cover no-repeat url('${data.teachers[index].photo}');">
+ 
                        <div class="teachers__socials">
                         <a class="icons__socials-link" href="#"
                           ><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -422,6 +424,9 @@ $(document).ready(function () {
                       <div class="teachers__item-desc condensed">${data.teachers[index].shortDesc}</div></div>
                       
                     </div>
+
+                    </div>
+                    <div class="teachers__item-hover" style=" height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">${data.teachers[index].fullDesc}</div>
                   </li>  
        `;
       }
