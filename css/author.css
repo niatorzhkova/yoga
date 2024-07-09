@@ -39,6 +39,7 @@
 
 .author__photo {
   max-width: 626px;
+  width: 626px;
   overflow: hidden;
   border-radius: 32px;
   z-index: 1;
@@ -77,4 +78,28 @@
 
 .author__top-text {
   line-height: 28px !important;
+}
+
+@media (min-width: 1440px) {
+  .author__photo-block::before {
+    left: -89px;
+    top: 96px;
+    background-size: 74%;
+  }
+  .author__photo-block::after {
+    right: -178px;
+    bottom: -33px;
+    background-size: 66%;
+  }
+  .author__top-desc {
+    padding-top: 157px;
+  }
+
+  .author__block {
+    gap: 140px;
+  }
+
+  .author__top {
+    flex-basis: 32%;
+  }
 }

@@ -6,6 +6,18 @@
   height: 1064px;
 }
 
+@media (min-width: 1440px) {
+  .hero-section {
+    height: 960px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-section {
+    height: 1064px;
+  }
+}
+
 .hero {
   color: #ffffff;
   background: 81% 100% / 42% no-repeat url(../images/hero/hero-pic.webp);
@@ -20,6 +32,18 @@
     padding: 160px 0 120px;
     height: inherit;
   }
+
+  @media (min-width: 1440px) {
+    .hero__block {
+      padding: 135px 0 117px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .hero__block {
+    }
+  }
+
   .hero__container {
     height: inherit;
   }
@@ -71,5 +95,14 @@
   .hero__bottom-right {
     padding-top: 15px;
     /* letter-spacing: -1px; */
+  }
+
+  @media (min-width: 1440px) {
+    .hero__top-title {
+      margin-bottom: 30px;
+    }
+    .hero {
+      background: 92% 100% / 51% no-repeat url(../images/hero/hero-pic.webp);
+    }
   }
 }

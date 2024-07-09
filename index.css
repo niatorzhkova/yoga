@@ -129,7 +129,17 @@ p {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  padding: 15px;
+}
+
+@media (min-width: 1440px) {
+  .page {
+  }
+}
+
+@media (min-width: 1920px) {
+  .page {
+    padding: 15px;
+  }
 }
 
 .page .container {
@@ -146,15 +156,17 @@ p {
   flex-direction: column;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .page .container {
-    padding: 0 40px;
+    padding: 0 15px;
+    max-width: 1264px;
   }
 }
 
 @media (min-width: 1920px) {
   .page .container {
     padding: 0;
+    max-width: 1504px;
   }
 }
 
@@ -169,31 +181,29 @@ p {
   flex-direction: column;
   gap: 48px;
 }
-/* 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
   .section {
     padding: 127px 0 0;
   }
-}
+} */
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .section {
-    padding: 154px 0 0;
+    padding: 60px 0 0px;
   }
 }
 
 @media (min-width: 1920px) {
   .section {
-    padding: 195px 0 0;
+    padding: 100px 0 20px;
   }
-} */
+}
 
 .section__title {
   font-size: 45px;
-  line-height: 0.9;
-  font-weight: 400;
+  font-weight: 500;
   color: #090b09;
-  /* letter-spacing: -3.2px; */
 }
 
 @media (min-width: 768px) {
@@ -205,14 +215,14 @@ p {
 
 @media (min-width: 1200px) {
   .section__title {
-    font-size: 80px;
+    font-size: 64px;
   }
 }
 
 @media (min-width: 1920px) {
   .section__title {
     font-size: 64px;
-    font-weight: 500;
+
     line-height: 74px;
   }
 }
@@ -252,19 +262,6 @@ p {
   line-height: 37.5px;
   color: #000000;
   /* letter-spacing: -1.5px; */
-}
-
-@media (min-width: 768px) {
-  .subtitle {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .subtitle {
-    /* font-size: 30px; */
-    font-size: 22.5px;
-  }
 }
 
 @media (min-width: 1920px) {
@@ -832,7 +829,7 @@ section.reviews {
   font-size: 24px;
   border: none;
   outline: none;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -960,3 +957,13 @@ section.reviews {
 .section.diagnostics {
   padding-top: 195px;
 }
+
+/* .owl-item {
+  margin-right: 15px;
+}
+
+@media (min-width: 1440px) {
+  .owl-item {
+    margin-right: 30px;
+  }
+} */

@@ -446,8 +446,19 @@ $(document).ready(function () {
       touchDrag: true,
       // autoplay: 0.5,
       autoplayHoverPause: true,
+      autoWidth: true,
       responsive: {
         0: {
+          items: 2,
+        },
+        640: {
+          items: 3,
+        },
+        1440: {
+          items: 4,
+          margin: 25,
+        },
+        1920: {
           items: 5,
         },
       },

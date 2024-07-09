@@ -210,12 +210,24 @@
   position: static;
   right: 0;
   left: 0;
-  padding: 16px 32px 0;
+
   align-items: center;
 }
 @media (max-width: 767px) {
   .hamburger-header {
     display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hamburger-header {
+    padding: 21px 38px 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hamburger-header {
+    padding: 16px 32px 0;
   }
 }
 

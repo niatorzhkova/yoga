@@ -64,3 +64,25 @@
 .help__item-title {
   margin-bottom: 25px;
 }
+
+@media (min-width: 1440px) {
+  .help__block {
+    padding: 70px 0 70px;
+  }
+  .help__list {
+    column-gap: 23px;
+  }
+  .help__item {
+    padding: 35px 25px;
+  }
+  .help__item-icon-container {
+    margin-bottom: 25px;
+  }
+  .help__item-text {
+    width: 90%;
+    line-height: 32px;
+  }
+  .section.help {
+    padding-bottom: 15px;
+  }
+}
