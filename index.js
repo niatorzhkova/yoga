@@ -73,79 +73,9 @@
 //   },
 // });
 
-// // Скролл отзывов
-
-// const box = document.getElementById("reviews-container");
-
-// let isDown = false;
-// let startX;
-// let scrollLeft;
-
-// if (box) {
-//   box.addEventListener("mousedown", (e) => {
-//     isDown = true;
-//     startX = e.pageX - box.offsetLeft;
-//     scrollLeft = box.scrollLeft;
-//     box.style.cursor = "grabbing";
-//   });
-
-//   box.addEventListener("mouseleave", () => {
-//     isDown = false;
-//     box.style.cursor = "grab";
-//   });
-
-//   box.addEventListener("mouseup", () => {
-//     isDown = false;
-//     box.style.cursor = "grab";
-//   });
-
-//   document.addEventListener("mousemove", (e) => {
-//     if (!isDown) return;
-//     e.preventDefault();
-//     const x = e.pageX - box.offsetLeft;
-//     const walkX = x - startX;
-//     box.scrollLeft = scrollLeft - walkX;
-//   });
-// }
-
-// // Скролл "Вы научитесь"
-
-// const boxLearn = document.getElementById("learn-container");
-
-// let isDownLearn = false;
-// let startXLearn;
-// let scrollLeftLearn;
-
-// boxLearn.addEventListener("mousedown", (e) => {
-//   isDownLearn = true;
-//   startXLearn = e.pageX - boxLearn.offsetLeft;
-//   scrollLeftLearn = boxLearn.scrollLeft;
-//   boxLearn.style.cursor = "grabbing";
-// });
-
-// boxLearn.addEventListener("mouseleave", () => {
-//   isDownLearn = false;
-//   boxLearn.style.cursor = "grab";
-// });
-
-// boxLearn.addEventListener("mouseup", () => {
-//   isDownLearn = false;
-//   boxLearn.style.cursor = "grab";
-// });
-
-// document.addEventListener("mousemove", (e) => {
-//   if (!isDownLearn) return;
-//   e.preventDefault();
-//   const x = e.pageX - boxLearn.offsetLeft;
-//   const walkXLearn = x - startXLearn;
-//   boxLearn.scrollLeft = scrollLeftLearn - walkXLearn;
-// });
-
-// Youtube player
-
 var tag = document.createElement("script");
 
-tag.src = "https://www.youtube.com/player_api";
+tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -154,7 +84,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     height: "100%",
     width: "100%",
-    videoId: "cA3xM_3t9N4",
+    videoId: "eqvA79jRSCU",
   });
 }
 
@@ -162,30 +92,24 @@ function stopVideo() {
   player.stopVideo();
 }
 
+function loadVideo(videoId) {
+  player?.loadVideoByUrl?.(videoId);
+  player?.playVideo?.();
+}
+
 function handleYoutubeClick(event) {
+  console.log("click");
   const link = event.currentTarget.dataset.link;
   loadVideo(link);
   const modalOverlay = document.querySelector(".modal-component");
   modalOverlay.setAttribute("style", "display:block;");
 }
-function loadVideo(videoId) {
-  player?.loadVideoByUrl?.(videoId);
-  player?.playVideo?.();
-}
+
 function handleCloseModal(event) {
   stopVideo();
   const modalOverlay = document.querySelector(".modal-component");
   modalOverlay.setAttribute("style", "display:none;");
 }
-// document.addEventListener("DOMContentLoaded", () => {
-document.querySelectorAll(".play-btn").forEach((elem) => {
-  elem.addEventListener("click", handleYoutubeClick);
-});
-// });
-
-document.querySelectorAll(".modal__close").forEach((elem) => {
-  elem.addEventListener("click", handleCloseModal);
-});
 
 // Гамбургер-меню
 
@@ -202,7 +126,7 @@ function toggleMenu() {
     menuIcon.style.display = "flex";
   } else {
     menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
+    closeIcon.style.display = "flex";
     menuIcon.style.display = "none";
   }
 }
@@ -224,7 +148,7 @@ $(document).ready(function () {
           firstTemplate += `
             <li class="reviews__item with-img" style="background: center / cover no-repeat url('${data.first[index].img}');">
               <div class="reviews__button-container">
-                <button class="reviews__button round__btn"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="reviews__button round__btn play-btn" data-link="${data.first[index].video}"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 7.66025C16.3333 8.43005 16.3333 10.3546 15 11.1244L3 18.0526C1.66667 18.8224 8.41226e-08 17.8601 1.51421e-07 16.3205L7.57103e-07 2.4641C8.24401e-07 0.924501 1.66667 -0.0377495 3 0.732051L15 7.66025Z" fill="#22221F"/>
 </svg>
 </button>
@@ -280,7 +204,7 @@ $(document).ready(function () {
           thirdTemplate += `
             <li class="reviews__item with-img" style="background: center / cover no-repeat url('${data.third[index].img}');">
               <div class="reviews__button-container">
-                <button class="reviews__button round__btn"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="reviews__button round__btn play-btn" data-link="${data.third[index].video}"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 7.66025C16.3333 8.43005 16.3333 10.3546 15 11.1244L3 18.0526C1.66667 18.8224 8.41226e-08 17.8601 1.51421e-07 16.3205L7.57103e-07 2.4641C8.24401e-07 0.924501 1.66667 -0.0377495 3 0.732051L15 7.66025Z" fill="#22221F"/>
 </svg>
 </button>
@@ -322,6 +246,15 @@ $(document).ready(function () {
     }
 
     mapReviews();
+    // Youtube player
+
+    document.querySelectorAll(".play-btn").forEach((elem) => {
+      elem.addEventListener("click", handleYoutubeClick);
+    });
+
+    document.querySelectorAll(".modal__close").forEach((elem) => {
+      elem.addEventListener("click", handleCloseModal);
+    });
   });
 
   $.getJSON("./json/cases.json", function (data) {
