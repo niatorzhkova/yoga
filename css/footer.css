@@ -87,3 +87,36 @@
   margin-top: 100px;
   padding-bottom: 70px;
 }
+
+@media (min-width: 1440px) {
+  .footer-section {
+    margin-top: 80px;
+    padding-bottom: 70px !important;
+  }
+  .footer__block {
+    padding-top: 61px;
+  }
+  .footer__links-list {
+    gap: 8px;
+  }
+  .footer__menu {
+    width: 66%;
+    gap: 135px;
+  }
+}
+@media (min-width: 1920px) {
+  .footer-section {
+    margin-top: 100px;
+    padding-bottom: 70px !important;
+  }
+  .footer__block {
+    padding-top: 65px;
+  }
+  .footer__links-list {
+    gap: 10px;
+  }
+  .footer__menu {
+    width: 57%;
+    gap: 175px;
+  }
+}
