@@ -32,4 +32,21 @@
   .accordion__answer__block {
     padding-top: 30px;
   }
+
+  @media (min-width: 1440px) {
+    .questions__list {
+      width: 80%;
+    }
+    .questions__title {
+      margin-bottom: 70px;
+    }
+  }
+  @media (min-width: 1920px) {
+    .questions__list {
+      width: 67%;
+    }
+    .questions__title {
+      margin-bottom: 90px;
+    }
+  }
 }

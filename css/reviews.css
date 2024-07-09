@@ -100,4 +100,44 @@
   .reviews__item-link-container.dark {
     background-color: rgba(0, 0, 0, 0.4);
   }
+
+  @media (min-width: 1440px) {
+    .reviews__subtitle {
+      margin-bottom: 65px;
+    }
+
+    .reviews__item.with-img {
+      height: 570px;
+      width: 408px;
+      max-height: 570px;
+      max-width: 408px;
+      min-height: 570px;
+      min-width: 408px;
+    }
+    .reviews__item {
+      width: 408px;
+    }
+    .reviews__button {
+      margin-top: 65px;
+    }
+  }
+  @media (min-width: 1920px) {
+    .reviews__subtitle {
+      margin-bottom: 90px;
+    }
+    .reviews__item.with-img {
+      height: 570px;
+      width: 490px;
+      max-height: 570px;
+      max-width: 490px;
+      min-height: 570px;
+      min-width: 490px;
+    }
+    .reviews__item {
+      width: 490px;
+    }
+    .reviews__button {
+      margin-top: 110px;
+    }
+  }
 }

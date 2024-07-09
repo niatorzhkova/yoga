@@ -13,8 +13,6 @@
   .programme-info__pic {
     width: 538px;
     margin-top: 25px;
-    position: relative;
-    left: -14%;
   }
 
   .programme-info__data {
@@ -66,5 +64,32 @@
   }
   .accordion__button {
     padding: 13px;
+  }
+
+  @media (min-width: 1440px) {
+    .programme__title {
+      margin-bottom: 38px;
+    }
+    .programme-info__extra {
+      width: 100%;
+    }
+    .programme-info__pic {
+      width: 355px;
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 1920px) {
+    .programme__title {
+      margin-bottom: 40px;
+    }
+    .programme-info__extra {
+      width: 70%;
+    }
+    .programme-info__pic {
+      width: 538px;
+      margin-top: 25px;
+      position: relative;
+      left: -14%;
+    }
   }
 }

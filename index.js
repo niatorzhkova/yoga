@@ -222,7 +222,7 @@ $(document).ready(function () {
       for (let index = 0; index < data.first.length; index++) {
         if (data.first[index].img) {
           firstTemplate += `
-            <li class="reviews__item with-img" style="background: center / contain no-repeat url('${data.first[index].img}'); height: 570px;width: 490px;max-height: 570px;max-width: 490px;min-height: 570px;min-width: 490px;">
+            <li class="reviews__item with-img" style="background: center / cover no-repeat url('${data.first[index].img}');">
               <div class="reviews__button-container">
                 <button class="reviews__button round__btn"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 7.66025C16.3333 8.43005 16.3333 10.3546 15 11.1244L3 18.0526C1.66667 18.8224 8.41226e-08 17.8601 1.51421e-07 16.3205L7.57103e-07 2.4641C8.24401e-07 0.924501 1.66667 -0.0377495 3 0.732051L15 7.66025Z" fill="#22221F"/>
@@ -278,7 +278,7 @@ $(document).ready(function () {
       for (let index = 0; index < data.third.length; index++) {
         if (data.third[index].img) {
           thirdTemplate += `
-            <li class="reviews__item with-img" style="background: center / contain no-repeat url('${data.third[index].img}');height: 570px;width: 490px;max-height: 570px;max-width: 490px;min-height: 570px;min-width: 490px;">
+            <li class="reviews__item with-img" style="background: center / cover no-repeat url('${data.third[index].img}');">
               <div class="reviews__button-container">
                 <button class="reviews__button round__btn"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 7.66025C16.3333 8.43005 16.3333 10.3546 15 11.1244L3 18.0526C1.66667 18.8224 8.41226e-08 17.8601 1.51421e-07 16.3205L7.57103e-07 2.4641C8.24401e-07 0.924501 1.66667 -0.0377495 3 0.732051L15 7.66025Z" fill="#22221F"/>

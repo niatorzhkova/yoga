@@ -586,12 +586,12 @@ section.reviews {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .section.clients,
   section.learn,
   section.programme,
   section.reviews {
-    padding: 62px 0;
+    padding: 88px 0;
     gap: 62px;
   }
 
@@ -957,13 +957,35 @@ section.reviews {
 .section.diagnostics {
   padding-top: 195px;
 }
-
-/* .owl-item {
-  margin-right: 15px;
-}
-
 @media (min-width: 1440px) {
-  .owl-item {
-    margin-right: 30px;
+  .section.cases {
+    padding-top: 75px;
+    padding-bottom: 78px;
   }
-} */
+  .section.questions {
+    padding-top: 80px;
+  }
+  .dark-bg-section.with-stars {
+    background: url(../images/icons/star.svg) 6% 8%/10% no-repeat,
+      url(../images/icons/star.svg) 100% 29%/12% no-repeat, #22221f;
+  }
+  .section.diagnostics {
+    padding-top: 186px;
+  }
+}
+@media (min-width: 1920px) {
+  .section.cases {
+    padding-top: 120px;
+    padding-bottom: 115px;
+  }
+  .section.questions {
+    padding-top: 120px;
+  }
+  .dark-bg-section.with-stars {
+    background: url(../images/icons/star.svg) 14% 8%/7% no-repeat,
+      url(../images/icons/star.svg) 96% 32%/12% no-repeat, #22221f;
+  }
+  .section.diagnostics {
+    padding-top: 195px;
+  }
+}

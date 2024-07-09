@@ -97,4 +97,30 @@
     color: rgba(0, 0, 0, 0.8);
     line-height: 28px;
   }
+
+  @media (min-width: 1440px) {
+    .cases__header {
+      margin-bottom: 68px;
+    }
+
+    .cases__item-left {
+      width: 33%;
+    }
+    .cases__item-middle,
+    .cases__item-right {
+      width: 41%;
+    }
+  }
+  @media (min-width: 1920px) {
+    .cases__header {
+      margin-bottom: 85px;
+    }
+    .cases__item-left {
+      width: 25%;
+    }
+    .cases__item-middle,
+    .cases__item-right {
+      width: 37%;
+    }
+  }
 }

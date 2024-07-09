@@ -18,6 +18,7 @@
 
   .diagnostics__title {
     margin-bottom: 25px;
+    line-height: 74px;
   }
 
   .diagnostics__button {
@@ -37,5 +38,34 @@
 
   .diagnostics__left {
     padding-left: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    .diagnostics__right {
+      max-width: 632px;
+    }
+    .diagnostics__button {
+      margin-bottom: 15px;
+    }
+    .diagnostics__subtitle {
+      font-size: 24px;
+    }
+    .diagnostics__block {
+      align-items: center;
+    }
+  }
+  @media (min-width: 1920px) {
+    .diagnostics__right {
+      max-width: 699px;
+    }
+    .diagnostics__button {
+      margin-bottom: 75px;
+    }
+    .diagnostics__subtitle {
+      font-size: 20px;
+    }
+    .diagnostics__block {
+      align-items: unset;
+    }
   }
 }
