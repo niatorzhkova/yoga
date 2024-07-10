@@ -328,7 +328,7 @@ $(document).ready(function () {
 
       for (let index = 0; index < data.teachers.length; index++) {
         template += `
-                 <li class="teachers__item" style=" height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">
+                 <li class="teachers__item">
 <div class="teachers__item-no-hover" style="background: center / cover no-repeat url('${data.teachers[index].photo}');">
  
                        <div class="teachers__socials">
@@ -354,12 +354,13 @@ $(document).ready(function () {
                           </svg></a>
                       </div>
                       <div class="teachers__item-info"><div class="teachers__item-name condensed">${data.teachers[index].name}</div>
+                      <div class="teachers__item-info-btn condensed"><button></button></div>
                       <div class="teachers__item-desc condensed">${data.teachers[index].shortDesc}</div></div>
                       
                     </div>
 
                     </div>
-                    <div class="teachers__item-hover" style=" height: 560px;width: 362px;max-height: 560px;max-width: 362px;min-height: 560px;min-width: 362px;">
+                    <div class="teachers__item-hover">
                     <div class="teachers__item-hover__name">${data.teachers[index].name}</div>
                     <div class="teachers__item-hover__fulldesc">${data.teachers[index].fullDesc}</div>
                     </div>

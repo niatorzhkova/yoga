@@ -838,8 +838,6 @@ section.reviews {
   border-radius: 24px;
   overflow: hidden;
   color: #fff;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 
   .section__title {
     color: #fff;
@@ -848,7 +846,10 @@ section.reviews {
     color: #fff;
   }
 }
-
+.dark-bg-section.hero-section {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 .light-bg-section {
   width: 99%;
   margin: 0 auto;
@@ -914,8 +915,8 @@ section.reviews {
 
 .icons__socials-link {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 8px;
   border-radius: 16px;
@@ -950,11 +951,16 @@ section.reviews {
   padding-top: 195px;
 }
 @media (min-width: 1440px) {
+  .icons__socials-link {
+    width: 48px;
+    height: 48px;
+  }
+
   .standard-text {
     font-size: 20px;
   }
 
-  .dark-bg-section {
+  .dark-bg-section.hero-section {
     border-radius: 32px;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
