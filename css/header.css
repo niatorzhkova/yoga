@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 0;
+  padding: 18px 0;
 }
 
 @media (min-width: 768px) {
@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .header__logo-container {
     padding: 17px 0;
   }
@@ -202,7 +202,7 @@
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 13px;
   position: static;
   right: 0;
   left: 0;
@@ -304,8 +304,8 @@
 }
 
 .hamburger-header .logo {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 500;
 }
 
@@ -349,6 +349,11 @@
 @media (min-width: 1440px) {
   .menu {
     left: 80%;
+  }
+  .hamburger-header .logo {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
   }
 }
 @media (min-width: 1920px) {

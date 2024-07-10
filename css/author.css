@@ -5,14 +5,16 @@
   padding: 20px 0 0;
   height: inherit;
   color: #000000;
-  gap: 150px;
+  gap: 35px;
+
+  flex-direction: column-reverse;
 }
 .author__container {
   height: inherit;
 }
 
 .author__top-title {
-  margin-bottom: 38px;
+  margin-bottom: 20px;
 }
 
 .author__top-button {
@@ -33,13 +35,16 @@
 .author__photo {
   flex-basis: 50%;
 }
+.author-desktop-pic {
+  display: none;
+}
 .author__top {
   flex-basis: 45%;
 }
 
 .author__photo {
-  max-width: 626px;
-  width: 626px;
+  max-width: 361px;
+  width: 361px;
   overflow: hidden;
   border-radius: 32px;
   z-index: 1;
@@ -48,39 +53,62 @@
 .author__photo-block {
   position: relative;
 }
-.author__photo-block::after {
-  content: "";
-  background: url("../images/author/leaves-right.png") no-repeat;
-  right: -160px;
-  bottom: -30px;
-  position: absolute;
-  display: inline-block;
-  width: 241px;
-  height: 357px;
-}
-.author__photo-block::before {
-  content: "";
-  background: url("../images/author/leaves-left.png") no-repeat;
-  left: -135px;
-  top: 65px;
-  position: absolute;
-  display: inline-block;
-  width: 182px;
-  height: 380px;
-}
-.author__subtitle {
-  margin-bottom: 25px;
-}
 
-.author__top-desc {
-  padding-top: 135px;
+.author__subtitle {
+  margin-bottom: 15px;
 }
 
 .author__top-text {
-  line-height: 28px !important;
+  line-height: 26px !important;
+  width: 97%;
 }
 
 @media (min-width: 1440px) {
+  .author__photo-block::after {
+    content: "";
+    background: url("../images/author/leaves-right.png") no-repeat;
+    right: -160px;
+    bottom: -30px;
+    position: absolute;
+    display: inline-block;
+    width: 241px;
+    height: 357px;
+  }
+  .author__photo-block::before {
+    content: "";
+    background: url("../images/author/leaves-left.png") no-repeat;
+    left: -135px;
+    top: 65px;
+    position: absolute;
+    display: inline-block;
+    width: 182px;
+    height: 380px;
+  }
+  .author-desktop-pic {
+    display: block;
+  }
+  .author-mobile-pic {
+    display: none;
+  }
+  .author__top-text {
+    line-height: 28px !important;
+    width: 100%;
+  }
+  .author__subtitle {
+    margin-bottom: 25px;
+  }
+  .author__top-title {
+    margin-bottom: 38px;
+  }
+
+  .author__photo {
+    max-width: 626px;
+    width: 626px;
+    overflow: hidden;
+    border-radius: 32px;
+    z-index: 1;
+    position: relative;
+  }
   .author__photo-block::before {
     left: -89px;
     top: 96px;
@@ -97,9 +125,18 @@
 
   .author__block {
     gap: 140px;
+    flex-direction: row;
   }
 
   .author__top {
     flex-basis: 32%;
+  }
+}
+@media (min-width: 1920px) {
+  .author__top-desc {
+    padding-top: 135px;
+  }
+  .author__block {
+    gap: 150px;
   }
 }

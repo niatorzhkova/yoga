@@ -143,10 +143,10 @@ p {
 }
 
 .page .container {
+  width: 93%;
   max-width: 1504px;
   margin: 0 auto;
   position: relative;
-  width: 97%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,6 +160,7 @@ p {
   .page .container {
     padding: 0 15px;
     max-width: 1264px;
+    width: 97%;
   }
 }
 
@@ -171,7 +172,7 @@ p {
 }
 
 .section {
-  padding: 100px 0 20px;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,25 +202,13 @@ p {
 }
 
 .section__title {
-  font-size: 45px;
+  font-size: 32px;
   font-weight: 500;
   color: #090b09;
+  line-height: 40px;
 }
 
-@media (min-width: 768px) {
-  .section__title {
-    font-size: 55px;
-    /* padding: 0 20px; */
-  }
-}
-
-@media (min-width: 1200px) {
-  .section__title {
-    font-size: 64px;
-  }
-}
-
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .section__title {
     font-size: 64px;
 
@@ -228,7 +217,7 @@ p {
 }
 
 .logo {
-  font-size: 32px;
+  font-size: 24px;
   /* font-weight: 700; */
   /* font-size: 17px; */
   /* line-height: 16px; */
@@ -251,7 +240,7 @@ p {
   }
 } */
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .logo {
     font-size: 32px;
   }
@@ -259,13 +248,13 @@ p {
 
 .subtitle {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 37.5px;
+  font-size: 24px;
+  line-height: 28px;
   color: #000000;
   /* letter-spacing: -1.5px; */
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .subtitle {
     font-size: 32px;
   }
@@ -816,7 +805,7 @@ section.reviews {
 /* ------------- new */
 
 .standard-text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
   /* letter-spacing: -1.3px; */
@@ -827,7 +816,7 @@ section.reviews {
   border-radius: 40px;
   background-color: var(--accentYellowColor);
   color: #000000;
-  font-size: 24px;
+  font-size: 18px;
   border: none;
   outline: none;
   font-family: "Roboto", sans-serif;
@@ -846,9 +835,11 @@ section.reviews {
 .dark-bg-section {
   margin: 0 auto;
   background-color: #22221f;
-  border-radius: 32px;
+  border-radius: 24px;
   overflow: hidden;
   color: #fff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 
   .section__title {
     color: #fff;
@@ -959,6 +950,15 @@ section.reviews {
   padding-top: 195px;
 }
 @media (min-width: 1440px) {
+  .standard-text {
+    font-size: 20px;
+  }
+
+  .dark-bg-section {
+    border-radius: 32px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+  }
   .section.cases {
     padding-top: 75px;
     padding-bottom: 78px;
@@ -972,6 +972,18 @@ section.reviews {
   }
   .section.diagnostics {
     padding-top: 186px;
+  }
+  .main-button {
+    padding: 24px 40px;
+    border-radius: 40px;
+    background-color: var(--accentYellowColor);
+    color: #000000;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
   }
 }
 @media (min-width: 1920px) {
