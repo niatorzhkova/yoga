@@ -351,7 +351,7 @@ $(document).ready(function () {
                    <div class="programme-info__days"><div class="programme-info__label subtitle-wh-bg condensed">Дни занятий: </div>
                    <div class="programme-info__data condensed standard-text-16">${data.info.days}</div></div></div>
                    <div class="programme-info__extra condensed standard-text-16">${data.info.extra}</div>
-                   <div class="programme-info__pic"><img src="../images/programme/programme-pic.png" /></div>
+                   <div class="programme-info__pic"><img src="./images/programme/programme-pic.png" /></div>
          `;
 
       document.querySelector(".programme-info").innerHTML = template;

@@ -11,7 +11,7 @@
       "text": "",
       "name": "Елена Иванова",
       "link": "#",
-      "img": "../images/reviews/reviews-first.webp",
+      "img": "./images/reviews/reviews-first.webp",
       "video": "    https://www.youtube.com/embed/eqvA79jRSCU"
     },
     {
@@ -47,7 +47,7 @@
       "text": "",
       "name": "Елена Иванова",
       "link": "#",
-      "img": "../images/reviews/reviews-second.webp",
+      "img": "./images/reviews/reviews-second.webp",
       "video": "    https://www.youtube.com/embed/eqvA79jRSCU"
     },
     {
@@ -61,7 +61,7 @@
       "text": "",
       "name": "Елена Иванова",
       "link": "#",
-      "img": "../images/reviews/reviews-third.webp",
+      "img": "./images/reviews/reviews-third.webp",
       "video": "    https://www.youtube.com/embed/eqvA79jRSCU"
     }
   ]

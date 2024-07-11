@@ -1,25 +1,25 @@
 {
   "teachers": [
     {
-      "photo": "../images/teachers/1.png",
+      "photo": "./images/teachers/1.png",
       "name": "Дмитрий Ковальчук",
       "shortDesc": "Эксперт в сфере онлайн образования",
       "fullDesc": "Полное описание"
     },
     {
-      "photo": "../images/teachers/2.png",
+      "photo": "./images/teachers/2.png",
       "name": "Василий Нистирюк",
       "shortDesc": "Практик йоги с 2013, преподаёт с 2016.",
       "fullDesc": "Полное описание"
     },
     {
-      "photo": "../images/teachers/3.png",
+      "photo": "./images/teachers/3.png",
       "name": "Екатерина Осокина",
       "shortDesc": "Методист образовательных программ.",
       "fullDesc": "Полное описание"
     },
     {
-      "photo": "../images/teachers/4.jpeg",
+      "photo": "./images/teachers/4.jpeg",
       "name": "Антон Петров",
       "shortDesc": "Методист образовательных программ.",
       "fullDesc": "Полное описание"
