@@ -168,7 +168,7 @@ $(document).ready(function () {
           firstTemplate += `
             <li class="reviews__item">
               <div class="subtitle reviews__item-title condensed ">${data.first[index].title}</div>
-              <p class="standard-text reviews__item-text">${data.first[index].text}</p>
+              <p class="standard-text-16 reviews__item-text">${data.first[index].text}</p>
               <div class="reviews__item-footer">
                 <div class="reviews__item-footer__name condensed">${data.first[index].name}</div>
                 <div class="reviews__item-footer__link">
@@ -186,7 +186,7 @@ $(document).ready(function () {
         secondTemplate += `
             <li class="reviews__item">
               <div class="subtitle reviews__item-title condensed ">${data.second[index].title}</div>
-              <p class="standard-text standard-text reviews__item-text">${data.second[index].text}</p>
+              <p class="standard-text-16 reviews__item-text">${data.second[index].text}</p>
               <div class="reviews__item-footer">
                 <div class="reviews__item-footer__name condensed">${data.second[index].name}</div>
                 <div class="reviews__item-footer__link">
@@ -224,7 +224,7 @@ $(document).ready(function () {
           thirdTemplate += `
             <li class="reviews__item">
               <div class="subtitle reviews__item-title condensed ">${data.third[index].title}</div>
-              <p class="standard-text reviews__item-text">${data.third[index].text}</p>
+              <p class="standard-text-16 reviews__item-text">${data.third[index].text}</p>
               <div class="reviews__item-footer">
                 <div class="reviews__item-footer__name condensed">${data.third[index].name}</div>
                 <div class="reviews__item-footer__link">
