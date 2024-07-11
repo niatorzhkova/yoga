@@ -1,63 +1,71 @@
-.questions {
-  .questions__accordion-item {
-    background-color: #383835;
-    border-radius: 24px;
-    padding: 23px 24px;
-  }
-  .questions__title {
-    margin-bottom: 32px;
-    align-self: center;
-  }
-  .questions__list {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.questions .questions__accordion-item {
+  background-color: #383835;
+  border-radius: 24px;
+  padding: 23px 24px;
+}
+
+.questions .questions__title {
+  margin-bottom: 32px;
+  align-self: center;
+}
+
+.questions .questions__list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.questions .questions__block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.questions .accordion__answer {
+  font-size: 20px;
+  opacity: 90%;
+}
+
+.questions .accordion__answer-container {
+  width: 95%;
+  line-height: 28px;
+}
+
+.questions .accordion__answer__block {
+  padding-top: 30px;
+}
+
+.questions .accordion__answer__block.standard-text-16 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.questions .accordion__title {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@media (min-width: 1440px) {
+  .questions .questions__list {
+    width: 80%;
+    gap: 15px;
   }
 
-  .questions__block {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .accordion__answer {
-    font-size: 20px;
-    opacity: 90%;
-  }
-  .accordion__answer-container {
-    width: 95%;
-    line-height: 28px;
-  }
-  .accordion__answer__block {
-    padding-top: 30px;
-  }
-  .accordion__answer__block.standard-text-16 {
-    color: rgba(255, 255, 255, 0.9);
+  .questions .questions__title {
+    margin-bottom: 70px;
   }
 
-  .accordion__title {
-    font-size: 20px;
-    line-height: 26px;
+  .questions .questions__accordion-item {
+    padding: 20px 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .questions .questions__list {
+    width: 67%;
   }
 
-  @media (min-width: 1440px) {
-    .questions__list {
-      width: 80%;
-      gap: 15px;
-    }
-    .questions__title {
-      margin-bottom: 70px;
-    }
-    .questions__accordion-item {
-      padding: 20px 24px;
-    }
-  }
-  @media (min-width: 1920px) {
-    .questions__list {
-      width: 67%;
-    }
-    .questions__title {
-      margin-bottom: 90px;
-    }
+  .questions .questions__title {
+    margin-bottom: 90px;
   }
 }

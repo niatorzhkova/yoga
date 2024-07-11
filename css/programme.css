@@ -1,135 +1,147 @@
-.programme {
-  .programme-info {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
+.programme .programme-info {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.programme .programme__block {
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+}
+
+.programme .programme-info__pic {
+  display: none;
+}
+
+.programme .programme-info__extra {
+  width: 96%;
+  margin-top: -5px;
+  line-height: 26px;
+}
+
+.programme .programme__block-left {
+  width: 100%;
+}
+
+.programme .programme__accordion-item {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.programme .programme__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.programme .programme__title {
+  margin-bottom: 18px;
+}
+
+.programme .programme-info__label {
+  margin-bottom: 1px;
+}
+
+.programme .accordion__title {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.programme .accordion__answer-list {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.programme .accordion__button {
+  padding: 13px;
+}
+
+.programme .programme-info__container {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  gap: 45px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 1440px) {
+  .programme .accordion__answer-list {
+    margin-top: 30px;
   }
 
-  .programme__block {
-    display: flex;
-    gap: 23px;
-    flex-direction: column;
+  .programme .programme__accordion-item {
+    padding: 25px 20px;
   }
 
-  .programme-info__pic {
-    display: none;
+  .programme .accordion__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 
-  .programme-info__extra {
-    width: 96%;
-    margin-top: -5px;
-    line-height: 26px;
+  .programme .programme__block-right {
+    width: 68%;
   }
 
-  .programme__block-left {
+  .programme .programme-info {
+    gap: 33px;
+  }
+
+  .programme .programme-info__label {
+    margin-bottom: 3px;
+  }
+
+  .programme .programme-info__container {
+    display: block;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .programme .programme__block-left {
+    width: 32%;
+  }
+
+  .programme .programme-info__time {
+    margin-bottom: 33px;
+  }
+
+  .programme .programme__block {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .programme .programme__title {
+    margin-bottom: 38px;
+  }
+
+  .programme .programme-info__extra {
     width: 100%;
+    line-height: 32px;
   }
 
-  .programme__accordion-item {
-    background-color: #ffffff;
-    border-radius: 24px;
-    padding: 24px;
+  .programme .programme-info__pic {
+    display: block;
+    width: 355px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .programme .programme__title {
+    margin-bottom: 40px;
   }
 
-  .programme__accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .programme__title {
-    margin-bottom: 18px;
-  }
-  .programme-info__label {
-    margin-bottom: 1px;
-  }
-  .accordion__title {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  /* .accordion__header {
-    margin-bottom: 30px;
-  } */
-  .accordion__answer-list {
-    padding: 0 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  .accordion__button {
-    padding: 13px;
+  .programme .programme-info__extra {
+    width: 70%;
   }
 
-  .programme-info__container {
-    display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    gap: 45px;
-    padding-bottom: 15px;
-  }
-
-  @media (min-width: 1440px) {
-    .accordion__answer-list {
-      margin-top: 30px;
-    }
-    .programme__accordion-item {
-      padding: 25px 20px;
-    }
-
-    .accordion__title {
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .programme__block-right {
-      width: 68%;
-    }
-    .programme-info {
-      gap: 33px;
-    }
-    .programme-info__label {
-      margin-bottom: 3px;
-    }
-    .programme-info__container {
-      display: block;
-      padding-bottom: 0;
-      border-bottom: none;
-    }
-    .programme__block-left {
-      width: 32%;
-    }
-    .programme-info__time {
-      margin-bottom: 33px;
-    }
-
-    .programme__block {
-      flex-direction: row;
-      gap: 40px;
-    }
-
-    .programme__title {
-      margin-bottom: 38px;
-    }
-    .programme-info__extra {
-      width: 100%;
-      line-height: 32px;
-    }
-    .programme-info__pic {
-      display: block;
-      width: 355px;
-      margin-top: 20px;
-    }
-  }
-  @media (min-width: 1920px) {
-    .programme__title {
-      margin-bottom: 40px;
-    }
-    .programme-info__extra {
-      width: 70%;
-    }
-    .programme-info__pic {
-      width: 538px;
-      margin-top: 25px;
-      position: relative;
-      left: -14%;
-    }
+  .programme .programme-info__pic {
+    width: 538px;
+    margin-top: 25px;
+    position: relative;
+    left: -14%;
   }
 }
