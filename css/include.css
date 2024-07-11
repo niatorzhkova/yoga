@@ -20,8 +20,12 @@
 }
 
 .include .include__list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
   column-gap: 20px;
   row-gap: 18px;
 }
@@ -55,6 +59,7 @@
   }
 
   .include .include__list {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

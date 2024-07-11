@@ -1,9 +1,14 @@
 .author__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px 0 0;
   height: inherit;
   color: #000000;
   gap: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
@@ -20,6 +25,8 @@
 }
 
 .author__top-button::after {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   content: "";
   background-image: url("../images/author/arrow-icon.svg");
@@ -31,6 +38,7 @@
 }
 
 .author__photo {
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 
@@ -39,6 +47,7 @@
 }
 
 .author__top {
+  -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
 }
 
@@ -135,10 +144,14 @@
 
   .author__block {
     gap: 140px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 
   .author__top {
+    -ms-flex-preferred-size: 32%;
     flex-basis: 32%;
   }
 }

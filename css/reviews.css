@@ -1,4 +1,6 @@
 .reviews .reviews__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 25px;
 }
@@ -9,10 +11,15 @@
 }
 
 .reviews .reviews__list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
   column-gap: 20px;
+  -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
 }
 
@@ -21,12 +28,19 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 32px;
   padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
 }
 
 .reviews .reviews__item.with-img {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 23px;
   height: 383px;
@@ -47,6 +61,8 @@
 
 .reviews .reviews__title {
   margin-bottom: 15px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   text-align: center;
 }
@@ -57,6 +73,8 @@
   line-height: 32px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   text-align: center;
 }
@@ -76,8 +94,14 @@
 
 .reviews .reviews__item-footer {
   padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -99,6 +123,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -108,6 +134,8 @@
 }
 
 .reviews .reviews__button {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   margin-top: 40px;
 }
@@ -145,6 +173,7 @@
 
   .reviews .reviews__list.middle,
   .reviews .reviews__list.right {
+    display: -ms-grid;
     display: grid;
   }
 

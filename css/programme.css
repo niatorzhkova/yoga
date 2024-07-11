@@ -1,12 +1,22 @@
 .programme .programme-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 23px;
 }
 
 .programme .programme__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 23px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -31,7 +41,12 @@
 }
 
 .programme .programme__accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 15px;
 }
@@ -51,7 +66,12 @@
 
 .programme .accordion__answer-list {
   padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 10px;
   margin-top: 15px;
@@ -62,6 +82,8 @@
 }
 
 .programme .programme-info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   gap: 45px;
@@ -109,6 +131,9 @@
   }
 
   .programme .programme__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     gap: 40px;
   }

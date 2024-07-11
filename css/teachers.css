@@ -22,8 +22,15 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: inherit;
   width: inherit;
@@ -36,6 +43,8 @@
 .teachers .teachers__item-hover {
   display: none;
   opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   position: absolute;
   /* visibility: hidden; */
@@ -62,15 +71,24 @@
 }
 
 .teachers .teachers__subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 2px;
 }
 
 .teachers .teachers__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 5px;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -82,8 +100,14 @@
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   padding: 15px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -112,6 +136,8 @@
   background: url(../images/cases/slider-arrow-icon-dark.svg) center center
       no-repeat,
     var(--lightBgColor);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   outline: none;
   width: 40px;
@@ -120,8 +146,12 @@
   border-radius: 50%;
   stroke: #22221f;
   color: #22221f;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -139,6 +169,8 @@
   }
 
   .teachers .teachers__item:hover .teachers__item-no-hover {
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
     opacity: 0;
     position: absolute;
@@ -153,6 +185,8 @@
 
   .teachers .teachers__item:hover .teachers__item-hover {
     opacity: 100%;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
     background-color: #ffffff;
     position: absolute;
@@ -205,13 +239,21 @@
   }
 
   .teachers .teachers__subheader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 50px;
   }
 
   .teachers .teachers__header-buttons {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
 
