@@ -94,16 +94,15 @@
     /* letter-spacing: -1px; */
   }
 
-  .hero__bottom-right {
-    padding-top: 15px;
-    /* letter-spacing: -1px; */
-  }
-
   .hero__top {
     text-align: center;
   }
 
   @media (min-width: 1440px) {
+    .hero__bottom-right {
+      padding-top: 15px;
+      /* letter-spacing: -1px; */
+    }
     .hero__container {
       width: 97%;
     }

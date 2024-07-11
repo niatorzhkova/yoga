@@ -91,6 +91,7 @@
     .programme-info__container {
       display: block;
       padding-bottom: 0;
+      border-bottom: none;
     }
     .programme__block-left {
       width: 32%;
@@ -112,6 +113,7 @@
       line-height: 32px;
     }
     .programme-info__pic {
+      display: block;
       width: 355px;
       margin-top: 20px;
     }

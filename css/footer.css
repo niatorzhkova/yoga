@@ -27,36 +27,36 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 65px;
+  padding-top: 40px;
+  flex-direction: column;
 }
 
 .footer__menu {
-  display: flex;
-  gap: 175px;
-  /* justify-content: space-between; */
-  width: 57%;
-}
-
-.footer__links {
-  width: 35%;
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
 }
 
 .footer__subtitle {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 10px;
+  opacity: 90%;
 }
 
 .footer__menu-title {
   font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 45px;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 23px;
 }
 
 .footer__menu-left__item,
 .footer__menu-middle__item,
 .footer__menu-right__item {
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -65,7 +65,7 @@
 .footer__menu-right__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footer__links-item {
@@ -78,30 +78,56 @@
 
 .footer__links-list {
   display: flex;
-  gap: 10px;
-  margin-top: 35px;
+  gap: 8px;
+  margin-top: 25px;
 }
 
 .footer-section {
   padding-top: 0 !important;
-  margin-top: 100px;
-  padding-bottom: 70px;
+  margin-top: 20px;
+  padding-bottom: 50px !important;
 }
 
 @media (min-width: 1440px) {
+  .footer__menu-left__list,
+  .footer__menu-middle__list,
+  .footer__menu-right__list {
+    gap: 20px;
+  }
+  .footer__menu-left__item,
+  .footer__menu-middle__item,
+  .footer__menu-right__item {
+    font-size: 18px;
+  }
+  .footer__menu-title {
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+  .footer__links {
+    width: 35%;
+  }
+  .footer__subtitle {
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
   .footer-section {
     margin-top: 80px;
     padding-bottom: 70px !important;
   }
   .footer__block {
     padding-top: 61px;
+    flex-direction: row;
   }
   .footer__links-list {
     gap: 8px;
+    margin-top: 35px;
   }
   .footer__menu {
+    display: flex;
     width: 66%;
     gap: 135px;
+    margin-top: 0;
   }
 }
 @media (min-width: 1920px) {

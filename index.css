@@ -946,6 +946,8 @@ section.reviews {
 .dark-bg-section.with-stars {
   background: url(../images/icons/star.svg) 14% 8%/7% no-repeat,
     url(../images/icons/star.svg) 96% 32%/12% no-repeat, #22221f;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .section.cases {
@@ -958,7 +960,7 @@ section.reviews {
 }
 
 .section.diagnostics {
-  padding-top: 195px;
+  padding-top: 20px;
 }
 @media (min-width: 1440px) {
   .subtitle-wh-bg {
@@ -998,6 +1000,7 @@ section.reviews {
   .dark-bg-section.with-stars {
     background: url(../images/icons/star.svg) 6% 8%/10% no-repeat,
       url(../images/icons/star.svg) 100% 29%/12% no-repeat, #22221f;
+    border-radius: 32px;
   }
   .section.diagnostics {
     padding-top: 186px;

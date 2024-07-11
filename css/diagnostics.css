@@ -5,42 +5,65 @@
   .diagnostics__block {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    align-items: flex-end;
+    padding: 15px 15px 37px;
+
     background-color: #383835;
-    border-radius: 32px;
+    border-radius: 24px;
+    flex-direction: column-reverse;
+    margin: 0 auto;
   }
   .diagnostics__subtitle {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
     /* margin-bottom: 40px; */
+    line-height: 26px;
   }
 
   .diagnostics__title {
-    margin-bottom: 25px;
-    line-height: 74px;
+    margin-bottom: 16px;
+    line-height: 40px;
   }
 
+  .diagnostics__title.desktop {
+    display: none;
+  }
+  .diagnostics__title.mobile {
+    margin-top: 23px;
+  }
   .diagnostics__button {
-    margin-bottom: 75px;
-  }
-
-  .diagnostics__button::after {
-    display: inline-flex;
-    content: "";
-    background-image: url(../images/hero/arrow-icon.svg);
-    background-size: 126px 126px;
-    height: 126px;
-    width: 126px;
-    position: relative;
-    top: 46px;
+    margin-top: 37px;
   }
 
   .diagnostics__left {
-    padding-left: 60px;
+    text-align: center;
   }
 
   @media (min-width: 1440px) {
+    .diagnostics__button::after {
+      display: inline-flex;
+      content: "";
+      background-image: url(../images/hero/arrow-icon.svg);
+      background-size: 126px 126px;
+      height: 126px;
+      width: 126px;
+      position: relative;
+      top: 46px;
+    }
+    .diagnostics__title {
+      line-height: 74px;
+      margin-bottom: 25px;
+    }
+    .diagnostics__title.desktop {
+      display: block;
+    }
+    .diagnostics__title.mobile {
+      display: none;
+    }
+
+    .diagnostics__left {
+      padding-left: 60px;
+      text-align: left;
+    }
     .diagnostics__right {
       max-width: 632px;
     }
@@ -49,9 +72,14 @@
     }
     .diagnostics__subtitle {
       font-size: 24px;
+      line-height: 32px;
     }
     .diagnostics__block {
       align-items: center;
+      flex-direction: row;
+      border-radius: 32px;
+      padding: 15px;
+      align-items: flex-end;
     }
   }
   @media (min-width: 1920px) {
@@ -60,9 +88,6 @@
     }
     .diagnostics__button {
       margin-bottom: 75px;
-    }
-    .diagnostics__subtitle {
-      font-size: 20px;
     }
     .diagnostics__block {
       align-items: unset;

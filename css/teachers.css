@@ -94,124 +94,132 @@
   .teachers__item-desc {
     display: none;
   }
+
+  .teachers__header-buttons {
+    display: none !important;
+  }
+
+  .teachers__item-hover__name {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+
+  .teachers__item-info-btn {
+    button {
+      background: url(../images/cases/slider-arrow-icon-dark.svg) center center
+          no-repeat,
+        var(--lightBgColor);
+      transform: rotate(180deg);
+      outline: none;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      stroke: #22221f;
+      color: #22221f;
+      transition: 0.4s;
+      cursor: pointer;
+      display: inline-flex;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .teachers__item-info-btn {
+      display: none;
+    }
+    .teachers__item-info {
+      display: block;
+    }
+    .teachers__item-no-hover {
+      padding: 12px 15px;
+    }
+    .teachers__item:hover {
+      .teachers__item-no-hover {
+        transition: opacity 0.4s;
+        opacity: 0;
+        position: absolute;
+        /* visibility: hidden; */
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        border-radius: 24px;
+      }
+      .teachers__item-hover {
+        opacity: 100%;
+        transition: opacity 0.4s;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* visibility: visible; */
+        display: block;
+        height: inherit;
+        width: inherit;
+        padding: 12px 15px;
+
+        overflow: hidden;
+        border-radius: 24px;
+        color: #000000;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 32px 30px;
+      }
+
+      .teachers__item-hover__name,
+      .teachers__item-hover__fulldesc {
+        display: block;
+      }
+    }
+    .teachers__item-name {
+      margin-bottom: 13px;
+      font-size: 24px;
+      width: 100%;
+    }
+    .teachers__item-desc {
+      display: block;
+      font-size: 18px;
+      opacity: 90%;
+    }
+    .teachers__item,
+    .teachers__item-hover {
+      height: 560px;
+      width: 362px;
+      max-height: 560px;
+      max-width: 362px;
+      min-height: 560px;
+      min-width: 362px;
+    }
+    .teachers__title {
+      margin-bottom: 0;
+    }
+    .teachers__subheader {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .teachers__header-buttons {
+      display: flex !important;
+    }
+    .teachers__header {
+      text-align: left;
+    }
+  }
 }
-.teachers__header-buttons {
-  display: none !important;
-}
+
 .section.teachers {
   padding: 42px 0;
   gap: 33px;
 }
 
-.teachers__item-hover__name {
-  font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 22px;
-}
-
-.teachers__item-info-btn {
-  button {
-    background: url(../images/cases/slider-arrow-icon-dark.svg) center center
-        no-repeat,
-      var(--lightBgColor);
-    transform: rotate(180deg);
-    outline: none;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    stroke: #22221f;
-    color: #22221f;
-    transition: 0.4s;
-    cursor: pointer;
-    display: inline-flex;
-  }
-}
-
 @media (min-width: 1440px) {
-  .teachers__item-info {
-    display: block;
-  }
-  .teachers__item-no-hover {
-    padding: 12px 15px;
-  }
-  .teachers__item:hover {
-    .teachers__item-no-hover {
-      transition: opacity 0.4s;
-      opacity: 0;
-      position: absolute;
-      /* visibility: hidden; */
-
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      border-radius: 24px;
-    }
-    .teachers__item-hover {
-      opacity: 100%;
-      transition: opacity 0.4s;
-      background-color: #ffffff;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      /* visibility: visible; */
-      display: block;
-      height: inherit;
-      width: inherit;
-      padding: 12px 15px;
-
-      overflow: hidden;
-      border-radius: 24px;
-      color: #000000;
-      font-weight: 400;
-      font-size: 20px;
-      padding: 32px 30px;
-    }
-
-    .teachers__item-hover__name,
-    .teachers__item-hover__fulldesc {
-      display: block;
-    }
-  }
-  .teachers__item-name {
-    margin-bottom: 13px;
-    font-size: 24px;
-    width: 100%;
-  }
-  .teachers__item-desc {
-    display: block;
-    font-size: 18px;
-    opacity: 90%;
-  }
-  .teachers__item,
-  .teachers__item-hover {
-    height: 560px;
-    width: 362px;
-    max-height: 560px;
-    max-width: 362px;
-    min-height: 560px;
-    min-width: 362px;
-  }
-  .teachers__title {
-    margin-bottom: 0;
-  }
-  .teachers__subheader {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
-
-  .teachers__header-buttons {
-    display: flex !important;
-  }
-  .teachers__header {
-    text-align: left;
-  }
   .section.teachers {
     padding: 80px 0;
     gap: 10px;
