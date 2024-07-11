@@ -73,6 +73,14 @@
 //   },
 // });
 
+// Клик на конпку Записаться
+
+const enrollBtn = document.querySelector(".enroll-btn");
+
+enrollBtn.addEventListener("click", function () {
+  window.open("https://forms.gle/B6aA4GJ9jTXDMhjk9 ", "_blank");
+});
+
 var tag = document.createElement("script");
 
 tag.src = "https://www.youtube.com/iframe_api";
