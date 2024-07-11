@@ -269,14 +269,14 @@ $(document).ready(function () {
                           <img src="${data.students[index].photo}" />
                         </div>
                         <div class="cases__item-name">${data.students[index].name}</div>
-                        <div class="cases__item-desc">${data.students[index].shortDesc}</div>
+                        <div class="cases__item-desc standard-text-16">${data.students[index].shortDesc}</div>
                       </div>
                       <div class="cases__item-middle">
                         <div class="cases__item-header">
                           <span>Точка А</span>
                           <img src="./images/cases/arrow-icon-1.svg" />
                         </div>
-                        <div class="cases__item-description">
+                        <div class="cases__item-description standard-text-16">
                           ${data.students[index].pointATxt}
                         </div>
                       </div>
@@ -285,7 +285,7 @@ $(document).ready(function () {
                           <span>Точка Б</span>
                           <img src="./images/cases/arrow-icon-2.svg" />
                         </div>
-                        <div class="cases__item-description">
+                        <div class="cases__item-description standard-text-16">
                           ${data.students[index].pointBTxt}
                         </div>
                       </div>
@@ -411,12 +411,13 @@ $(document).ready(function () {
     function mapProgrammeInfo() {
       let template = "";
       template += `
+                  <div class="programme-info__container">
                    <div class="programme-info__time">
                    <div class="programme-info__label subtitle-wh-bg condensed">Время занятий:</div>
-                   <div class="programme-info__data condensed">${data.info.time}</div></div>
+                   <div class="programme-info__data condensed standard-text-16">${data.info.time}</div></div>
                    <div class="programme-info__days"><div class="programme-info__label subtitle-wh-bg condensed">Дни занятий: </div>
-                   <div class="programme-info__data condensed">${data.info.days}</div></div>
-                   <div class="programme-info__extra condensed">${data.info.extra}</div>
+                   <div class="programme-info__data condensed standard-text-16">${data.info.days}</div></div></div>
+                   <div class="programme-info__extra condensed standard-text-16">${data.info.extra}</div>
                    <div class="programme-info__pic"><img src="../images/programme/programme-pic.png" /></div>
          `;
 
@@ -584,7 +585,7 @@ $(document).ready(function () {
                           class="accordion__answer accordion-content"
                           style="height: 0px"
                         >
-                            <div class="accordion__answer__block">
+                            <div class="accordion__answer__block standard-text-16">
                             ${data.accordion[index].answer} 
                           </div>
                         </div>

@@ -4,8 +4,9 @@
 .accordion__answer-item {
   list-style-type: disc;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 26px;
 }
 .accordion__answer-list {
   padding: 0 20px;
@@ -13,11 +14,13 @@
 .accordion__header-left {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .accordion__index {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+  min-width: 40px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -67,6 +70,14 @@
 }
 
 @media (min-width: 1440px) {
+  .accordion__answer-item {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .accordion__header-left {
+    gap: 15px;
+    align-items: unset;
+  }
   .accordion__button {
     padding: 12px;
   }

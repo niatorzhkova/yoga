@@ -1,21 +1,22 @@
 .cases {
   padding: 100px 0;
   .cases__item-photo {
-    width: 176px;
-    height: 176px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .cases__item {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
+    flex-direction: column;
   }
   .cases__item-left {
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,16 +24,15 @@
   }
   .cases__item-middle,
   .cases__item-right {
-    width: 37%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding: 27px 18px 22px;
   }
   .cases__item-left,
   .cases__item-middle,
   .cases__item-right {
-    min-height: 519px;
+    min-height: 244px;
   }
 
   .cases__item-left,
@@ -56,6 +56,7 @@
     font-weight: 500;
     font-size: 24px;
     color: #000;
+    align-items: center;
   }
 
   .cases__item-header {
@@ -74,33 +75,66 @@
 
   .cases__header {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 32px;
   }
 
   .cases__item-name {
-    margin-bottom: 20px;
-    font-size: 32px;
+    margin-bottom: 12px;
+    font-size: 24px;
     font-weight: 500;
   }
 
   .cases__item-desc {
-    width: 67%;
-    font-size: 18px;
+    width: 90%;
     color: rgba(0, 0, 0, 0.8);
     text-align: center;
   }
   .cases__item-description {
     font-weight: 400;
-    font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
-    line-height: 28px;
+    line-height: 26px;
+    margin-top: 11px;
   }
-
+  .cases__header-buttons {
+    padding-bottom: 10px;
+  }
   @media (min-width: 1440px) {
+    .cases__item-description {
+      line-height: 28px;
+      margin-top: 0;
+    }
+    .cases__item-header {
+      align-items: unset;
+    }
+    .cases__item-desc {
+      width: 67%;
+    }
+    .cases__item-name {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .cases__item-left,
+    .cases__item-middle,
+    .cases__item-right {
+      min-height: 519px;
+    }
+    .cases__item-photo {
+      width: 176px;
+      height: 176px;
+      margin-bottom: 22px;
+    }
+    .cases__item {
+      flex-direction: row;
+      gap: 20px;
+    }
+    .cases__header-buttons {
+      padding-bottom: 0;
+    }
     .cases__header {
       margin-bottom: 68px;
+      align-items: center;
     }
 
     .cases__item-left {
@@ -109,6 +143,7 @@
     .cases__item-middle,
     .cases__item-right {
       width: 41%;
+      justify-content: space-between;
     }
   }
   @media (min-width: 1920px) {

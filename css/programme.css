@@ -2,40 +2,33 @@
   .programme-info {
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 23px;
   }
 
   .programme__block {
     display: flex;
-    gap: 40px;
+    gap: 23px;
+    flex-direction: column;
   }
 
   .programme-info__pic {
-    width: 538px;
-    margin-top: 25px;
+    display: none;
   }
 
-  .programme-info__data {
-    font-size: 24px;
-  }
   .programme-info__extra {
-    font-size: 24px;
-    width: 70%;
-    line-height: 32px;
+    width: 96%;
     margin-top: -5px;
+    line-height: 26px;
   }
 
   .programme__block-left {
-    width: 32%;
+    width: 100%;
   }
 
-  .programme__block-right {
-    width: 68%;
-  }
   .programme__accordion-item {
     background-color: #ffffff;
     border-radius: 24px;
-    padding: 25px 20px;
+    padding: 24px;
   }
 
   .programme__accordion {
@@ -44,13 +37,14 @@
     gap: 15px;
   }
   .programme__title {
-    margin-bottom: 40px;
+    margin-bottom: 18px;
   }
   .programme-info__label {
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
   .accordion__title {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 26px;
   }
   /* .accordion__header {
     margin-bottom: 30px;
@@ -60,18 +54,62 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 15px;
   }
   .accordion__button {
     padding: 13px;
   }
 
+  .programme-info__container {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    gap: 45px;
+    padding-bottom: 15px;
+  }
+
   @media (min-width: 1440px) {
+    .accordion__answer-list {
+      margin-top: 30px;
+    }
+    .programme__accordion-item {
+      padding: 25px 20px;
+    }
+
+    .accordion__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .programme__block-right {
+      width: 68%;
+    }
+    .programme-info {
+      gap: 33px;
+    }
+    .programme-info__label {
+      margin-bottom: 3px;
+    }
+    .programme-info__container {
+      display: block;
+      padding-bottom: 0;
+    }
+    .programme__block-left {
+      width: 32%;
+    }
+    .programme-info__time {
+      margin-bottom: 33px;
+    }
+
+    .programme__block {
+      flex-direction: row;
+      gap: 40px;
+    }
+
     .programme__title {
       margin-bottom: 38px;
     }
     .programme-info__extra {
       width: 100%;
+      line-height: 32px;
     }
     .programme-info__pic {
       width: 355px;

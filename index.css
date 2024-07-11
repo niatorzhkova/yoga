@@ -534,6 +534,10 @@ section.reviews {
   padding: 40px 0;
 }
 
+.section.programme {
+  padding: 40px 0 25px;
+}
+
 @media (min-width: 768px) {
   .section.clients,
   section.learn,
@@ -867,8 +871,8 @@ section.reviews {
   background: url(../images/cases/slider-arrow-icon.svg) center center no-repeat,
     var(--darkBgColor);
   outline: none;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 50%;
   stroke: #fff;
@@ -881,8 +885,8 @@ section.reviews {
     var(--darkBgColor);
   transform: rotate(180deg);
   outline: none;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 50%;
   stroke: #fff;
@@ -935,7 +939,8 @@ section.reviews {
 .subtitle-wh-bg {
   color: #000000;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .dark-bg-section.with-stars {
@@ -944,18 +949,31 @@ section.reviews {
 }
 
 .section.cases {
-  padding-top: 120px;
-  padding-bottom: 115px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section.questions {
-  padding-top: 120px;
+  padding-top: 40px;
 }
 
 .section.diagnostics {
   padding-top: 195px;
 }
 @media (min-width: 1440px) {
+  .subtitle-wh-bg {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .standard-text-16 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .slider__header-btn-left,
+  .slider__header-btn-right {
+    width: 56px;
+    height: 56px;
+  }
   .icons__socials-link {
     width: 48px;
     height: 48px;
