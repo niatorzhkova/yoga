@@ -226,6 +226,7 @@
 
   .teachers .teachers__item,
   .teachers .teachers__item-hover {
+    display: block;
     height: 560px;
     width: 362px;
     max-height: 560px;
