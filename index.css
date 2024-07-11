@@ -329,6 +329,8 @@ p {
 
 @media (min-width: 768px) {
   .rectangle__button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 9px;
     padding: 8px 12px;
@@ -801,6 +803,8 @@ section.reviews {
   outline: none;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -851,6 +855,8 @@ section.reviews {
   border-radius: 50%;
   stroke: #fff;
   color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -858,6 +864,8 @@ section.reviews {
 .slider__header-btn-right {
   background: url(./images/cases/slider-arrow-icon.svg) center center no-repeat,
     var(--darkBgColor);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   outline: none;
   width: 40px;
@@ -866,6 +874,8 @@ section.reviews {
   border-radius: 50%;
   stroke: #fff;
   color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -875,6 +885,8 @@ section.reviews {
   background: url(./images/cases/slider-arrow-icon-dark.svg) center center
       no-repeat,
     var(--accentYellowColor);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -895,6 +907,8 @@ section.reviews {
   background: url(./images/cases/slider-arrow-icon-dark.svg) center center
       no-repeat,
     var(--accentYellowColor);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -908,6 +922,8 @@ section.reviews {
 }
 
 .slider__header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -1000,6 +1016,8 @@ section.reviews {
     outline: none;
     font-family: "Roboto", sans-serif;
     cursor: pointer;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
   }
 }
