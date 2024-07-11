@@ -87,7 +87,7 @@
 
 .hero .hero__container {
   height: inherit;
-  width: 100%;
+  width: 100% !important;
 }
 
 .hero .hero__top-title {
