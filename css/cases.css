@@ -1,7 +1,9 @@
 .cases {
   padding: 100px 0;
 }
-
+.cases__title {
+  width: 50%;
+}
 .cases .cases__item-photo {
   width: 88px;
   height: 88px;

@@ -34,13 +34,13 @@ function handleYoutubeClick(event) {
   console.log("click");
   const link = event.currentTarget.dataset.link;
   loadVideo(link);
-  const modalOverlay = document.querySelector(".modal-component");
+  const modalOverlay = document.querySelector(".modal-component-video");
   modalOverlay.setAttribute("style", "display:block;");
 }
 
 function handleCloseModal(event) {
   stopVideo();
-  const modalOverlay = document.querySelector(".modal-component");
+  const modalOverlay = document.querySelector(".modal-component-video");
   modalOverlay.setAttribute("style", "display:none;");
 }
 
@@ -287,7 +287,7 @@ $(document).ready(function () {
                           </svg></a>
                       </div>
                       <div class="teachers__item-info"><div class="teachers__item-name condensed">${data.teachers[index].name}</div>
-                      <div class="teachers__item-info-btn condensed"><button></button></div>
+                      <div class="teachers__item-info-btn condensed"><button data-key=${data.teachers[index].id} class="fullInfo"></button></div>
                       <div class="teachers__item-desc condensed">${data.teachers[index].shortDesc}</div></div>
                       
                     </div>
@@ -304,6 +304,34 @@ $(document).ready(function () {
     }
 
     mapTeachers();
+
+    // Открытие модалки слайдера
+
+    const modalInfoButton = document
+      .querySelectorAll(".fullInfo")
+      .forEach((elem) => {
+        elem.addEventListener("click", function () {
+          console.log("click modal");
+          let template;
+          const teacherIndex = elem.dataset.key - 1;
+
+          template = `<div>
+        <div class="teachers__item-info__name">${data.teachers[teacherIndex].name}</div>
+        <div class="teachers__item-info__fulldesc">${data.teachers[teacherIndex].fullDesc}</div>
+        </div>`;
+
+          const modalOverlay = document.querySelector(".modal-component-info");
+          modalOverlay.setAttribute("style", "display:block;");
+          document.querySelector(".modal__fullInfo-block").innerHTML = template;
+        });
+
+        const modalCloseInfoButton =
+          document.querySelector(".modal__close-info");
+        modalCloseInfoButton.addEventListener("click", function () {
+          const modalOverlay = document.querySelector(".modal-component-info");
+          modalOverlay.setAttribute("style", "display:none;");
+        });
+      });
 
     var owl = $(".teachers__list");
     owl.owlCarousel({

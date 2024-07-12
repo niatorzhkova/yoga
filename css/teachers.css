@@ -281,3 +281,15 @@
     gap: 33px;
   }
 }
+
+.teachers__item-info__fulldesc {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.teachers__item-info__name {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
