@@ -187,9 +187,8 @@
     margin-top: 0px;
   }
 }
-@media (min-width: 1440px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx) {
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1440px) and (min-resolution: 2dppx) {
   .hero {
     background: 92% 100%/51% no-repeat url(../images/hero/hero-pic@2x.webp);
   }
@@ -199,9 +198,8 @@
     background: 81% 100%/42% no-repeat url(../images/hero/hero-pic.webp);
   }
 }
-@media (min-width: 1920px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx) {
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1440px) and (min-resolution: 2dppx) {
   .hero {
     background: 81% 100%/42% no-repeat url(../images/hero/hero-pic@2x.webp);
   }
