@@ -927,15 +927,15 @@ section.reviews {
 .subtitle-wh-bg {
   color: #000000;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .dark-bg-section.with-stars {
   background: url(./images/icons/star.svg) 14% 8%/7% no-repeat,
     url(./images/icons/star.svg) 96% 32%/12% no-repeat, #22221f;
   border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .section.cases {

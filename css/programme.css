@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 23px;
+  gap: 22px;
 }
 
 .programme .programme__block {
@@ -22,6 +22,12 @@
 
 .programme .programme-info__pic {
   display: none;
+}
+
+.programme-info__label {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
 }
 
 .programme .programme-info__extra {
@@ -52,7 +58,7 @@
 }
 
 .programme .programme__title {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .programme .programme-info__label {

@@ -72,7 +72,7 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 160px 0 47px;
+  padding: 160px 0 43px;
   height: inherit;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -121,7 +121,7 @@
 }
 
 .hero .hero__top-title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: #ffffff;
 }
 
@@ -140,7 +140,7 @@
   align-items: center;
   font-size: 18px;
   opacity: 90%;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .hero .hero__bottom-label {

@@ -149,9 +149,9 @@ const enrollBtn=document.querySelector(".enroll-btn");enrollBtn.addEventListener
 </div>`;let n=document.querySelector(".modal-component-info");n.setAttribute("style","display:block;"),document.querySelector(".modal__fullInfo-block").innerHTML=t});let t=document.querySelector(".modal__close-info");t.addEventListener("click",function(){let _=document.querySelector(".modal-component-info");_.setAttribute("style","display:none;")})});var e=$(".teachers__list");e.owlCarousel({loop:!0,margin:15,dots:!1,touchDrag:!0,autoplayHoverPause:!0,autoWidth:!0,responsive:{0:{items:2},640:{items:3},1440:{items:4,margin:25},1920:{items:5}}}),$(".teachers__header-btn-right").click(function(){e.trigger("next.owl.carousel")}),$(".teachers__header-btn-left").click(function(){e.trigger("prev.owl.carousel")})}),$.getJSON("./json/programme.json",function(_){let e;e="",e+=`
           <div class="programme-info__container">
            <div class="programme-info__time">
-           <div class="programme-info__label subtitle-wh-bg condensed">Время занятий:</div>
+           <div class="programme-info__label condensed">Время занятий:</div>
            <div class="programme-info__data condensed standard-text-16">${_.info.time}</div></div>
-           <div class="programme-info__days"><div class="programme-info__label subtitle-wh-bg condensed">Дни занятий: </div>
+           <div class="programme-info__days"><div class="programme-info__label  condensed">Дни занятий: </div>
            <div class="programme-info__data condensed standard-text-16">${_.info.days}</div></div></div>
            <div class="programme-info__extra condensed standard-text-16">${_.info.extra}</div>
            <div class="programme-info__pic"><img src="./images/programme/programme-pic.png" /></div>

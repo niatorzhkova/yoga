@@ -1,5 +1,5 @@
 .section.curators {
-  padding: 37px 0;
+  padding: 40px 0;
 }
 
 .curators__item-left {
@@ -19,7 +19,7 @@
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 32px;
-  margin-top: 16px;
+  margin-top: 15px;
   line-height: 32px;
 }
 
@@ -34,7 +34,7 @@
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 18px;
 }
 
 .curators__item {

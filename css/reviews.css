@@ -13,13 +13,13 @@
 .reviews .reviews__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
+  -ms-grid-rows: 1fr 18px 1fr 18px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 20px;
+  row-gap: 18px;
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
-  -ms-grid-rows: auto 20px auto;
+  -ms-grid-rows: auto 18px auto;
   grid-template-rows: auto auto;
 }
 
@@ -27,7 +27,7 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 32px;
-  padding: 20px 30px;
+  padding: 23px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
