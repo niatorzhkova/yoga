@@ -126,7 +126,7 @@ p {
 }
 
 .page {
-  background-color: #fffbf0;
+  background-color: #fff;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -154,7 +154,7 @@ p {
 
 @media (min-width: 1440px) {
   .page .container {
-    padding: 0 15px;
+    /* padding: 0 15px; */
     max-width: 1264px;
     width: 97%;
   }
@@ -544,9 +544,9 @@ section.reviews {
 @media (min-width: 1440px) {
   .section.clients,
   section.learn,
-  section.programme,
+  .section.programme,
   section.reviews {
-    padding: 88px 0;
+    padding: 80px 0;
     gap: 62px;
   }
 

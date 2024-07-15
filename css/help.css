@@ -97,14 +97,15 @@
 
   .help__item-title {
     margin-bottom: 25px;
+    line-height: 37.5px !important;
   }
 
   .section.help {
-    padding-top: 80px;
+    padding-top: 75px;
   }
 
   .help__block {
-    padding: 70px 0 70px;
+    padding: 70px 0 30px;
   }
 
   .help__list {
@@ -117,7 +118,7 @@
   }
 
   .help__item {
-    padding: 35px 25px;
+    padding: 35px 38px;
   }
 
   .help__item-icon-container {
@@ -130,14 +131,13 @@
     width: 90%;
     line-height: 32px;
   }
+}
 
+@media (min-width: 1920px) {
   .section.help {
     padding-bottom: 15px;
     padding-top: 100px;
   }
-}
-
-@media (min-width: 1920px) {
   .help__item {
     padding: 35px;
   }

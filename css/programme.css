@@ -93,6 +93,10 @@
 }
 
 @media (min-width: 1440px) {
+  .programme-info__label {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .programme .accordion__answer-list {
     margin-top: 30px;
   }
@@ -129,7 +133,7 @@
   }
 
   .programme .programme-info__time {
-    margin-bottom: 33px;
+    margin-bottom: 25px;
   }
 
   .programme .programme__block {
@@ -141,7 +145,7 @@
   }
 
   .programme .programme__title {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .programme .programme-info__extra {
@@ -152,7 +156,7 @@
   .programme .programme-info__pic {
     display: block;
     width: 355px;
-    margin-top: 20px;
+    margin-top: 48px;
   }
 }
 

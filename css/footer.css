@@ -122,13 +122,13 @@
   }
 
   .footer__links {
-    width: 35%;
+    width: 34%;
   }
 
   .footer__subtitle {
     font-size: 18px;
     line-height: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .footer-section {
@@ -146,7 +146,7 @@
 
   .footer__links-list {
     gap: 8px;
-    margin-top: 35px;
+    margin-top: 25px;
   }
 
   .footer__menu {
