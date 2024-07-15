@@ -79,7 +79,7 @@
 @media (min-width: 1440px) {
   .author__photo-block::after {
     content: "";
-    background: url("../images/author/leaves-right.png") no-repeat;
+    background: url("../images/author/leaves-right.svg") no-repeat;
     right: -160px;
     bottom: -30px;
     position: absolute;
@@ -90,7 +90,7 @@
 
   .author__photo-block::before {
     content: "";
-    background: url("../images/author/leaves-left.png") no-repeat;
+    background: url("../images/author/leaves-left.svg") no-repeat;
     left: -135px;
     top: 65px;
     position: absolute;

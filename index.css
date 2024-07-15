@@ -688,70 +688,64 @@ section.reviews {
 }
 
 .modal__close {
-  right: 0;
-  top: -50px;
-  background: none;
+  /* right: 0;
+  top: -50px; */
+  justify-content: center;
+  display: flex;
+  background: #22221f;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
   outline: none;
   border: none;
-  display: block;
-  font-size: 0;
   color: #fff;
   position: absolute;
-  width: 32px;
-  height: 32px;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  padding: 12px;
+  cursor: pointer;
+  top: -30%;
+  right: -5%;
 }
 
 .modal__close:hover {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  opacity: 0.4;
+  opacity: 0.8;
   cursor: pointer;
-}
-
-.modal__close:before,
-.modal__close:after {
-  position: absolute;
-  left: 15px;
-  content: " ";
-  height: 20px;
-  width: 2px;
-  background-color: #fff;
-}
-
-.modal__close:before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.modal__close:after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .video-modal-component {
   position: relative;
-  width: 250px;
-  height: 140px;
-  height: auto;
+  width: 300px;
+  height: 169px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 450px) {
   .video-modal-component {
     width: 400px;
     height: 225px;
   }
 }
+@media (min-width: 600px) {
+  .video-modal-component {
+    width: 480px;
+    height: 270px;
+  }
+}
 
 @media (min-width: 500px) {
   .modal__close {
-    top: -30px;
-    right: -30px;
+    top: -25%;
+  }
+}
+
+@media (min-width: 640px) {
+  .modal__close {
+    top: -20%;
   }
 }
 
@@ -768,17 +762,16 @@ section.reviews {
     height: 450px;
   }
 
-  .modal__close:before {
-    height: 33px;
-  }
-
-  .modal__close:after {
-    height: 33px;
+  @media (min-width: 1920px) {
+    .video-modal-component {
+      width: 1000px;
+      height: 562px;
+    }
   }
 
   .modal__close {
-    top: -50px;
-    right: -50px;
+    top: -10%;
+    right: -5%;
   }
 }
 

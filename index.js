@@ -6,6 +6,8 @@ enrollBtn.addEventListener("click", function () {
   window.open("https://forms.gle/B6aA4GJ9jTXDMhjk9 ", "_blank");
 });
 
+// Youtube
+
 var tag = document.createElement("script");
 tag.async = true;
 tag.src = "https://www.youtube.com/iframe_api";
@@ -69,6 +71,8 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+// Отызывы
 
 $(document).ready(function () {
   $.getJSON("./json/reviews.json", function (data) {
@@ -179,7 +183,8 @@ $(document).ready(function () {
     }
 
     mapReviews();
-    // Youtube player
+
+    // Youtube player buttons
 
     document.querySelectorAll(".play-btn").forEach((elem) => {
       elem.addEventListener("click", handleYoutubeClick);
@@ -189,6 +194,8 @@ $(document).ready(function () {
       elem.addEventListener("click", handleCloseModal);
     });
   });
+
+  // Кейсы
 
   $.getJSON("./json/cases.json", function (data) {
     function mapCases() {
@@ -367,7 +374,8 @@ $(document).ready(function () {
     });
   });
 
-  // Программа
+  // Программа инфо слева
+
   $.getJSON("./json/programme.json", function (data) {
     function mapProgrammeInfo() {
       let template = "";
@@ -387,6 +395,8 @@ $(document).ready(function () {
 
     mapProgrammeInfo();
   });
+
+  // Программа аккордеон
 
   $.getJSON("./json/programme.json", function (data) {
     function mapProgrammeAccordion() {
@@ -505,6 +515,9 @@ $(document).ready(function () {
       console.log(e);
     }
   });
+
+  // Вопросы
+
   $.getJSON("./json/questions.json", function (data) {
     function mapQuestionsAccordion() {
       let template = "";
