@@ -75,7 +75,11 @@
   line-height: 26px !important;
   width: 97%;
 }
-
+@media (min-width: 640px) {
+  .author__photo-block {
+    align-self: flex-start;
+  }
+}
 @media (min-width: 1440px) {
   .author__photo-block::after {
     content: "";

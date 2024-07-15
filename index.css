@@ -914,6 +914,7 @@ section.reviews {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 8px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .slider__header-buttons {

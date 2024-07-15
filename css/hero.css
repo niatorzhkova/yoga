@@ -38,6 +38,29 @@
   }
 }
 
+@media (min-width: 700px) {
+  .hero {
+    background: 52% 20% / 50% no-repeat url(../images/hero/hero-pic.webp);
+  }
+}
+@media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background: 52% 20% / 50%no-repeat url(../images/hero/hero-pic@2x.webp);
+  }
+}
+@media (min-width: 1000px) {
+  .hero {
+    background: 52% 20% / 35% no-repeat url(../images/hero/hero-pic.webp);
+  }
+}
+@media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background: 52% 20% / 35%no-repeat url(../images/hero/hero-pic@2x.webp);
+  }
+}
+
 .hero .hero__block {
   display: -webkit-box;
   display: -ms-flexbox;
