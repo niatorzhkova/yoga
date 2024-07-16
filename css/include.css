@@ -69,11 +69,11 @@
 
 @media (min-width: 1920px) {
   .include .include__title {
-    margin-bottom: 92px;
+    margin-bottom: 90px;
   }
 
   .include .include__item {
-    padding: 22px 16px;
+    padding: 20px 22px;
   }
 }
 
@@ -89,6 +89,6 @@
 
 @media (min-width: 1920px) {
   .section.include {
-    padding: 120px 0;
+    padding: 120px 0 130px;
   }
 }

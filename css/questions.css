@@ -82,4 +82,11 @@
   .questions .questions__title {
     margin-bottom: 90px;
   }
+  .questions .accordion__title {
+    font-size: 32px;
+    line-height: 28px;
+  }
+  .questions .accordion__answer__block {
+    padding-top: 22px;
+  }
 }

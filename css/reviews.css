@@ -210,8 +210,11 @@
 }
 
 @media (min-width: 1920px) {
+  .reviews .reviews__title {
+    margin-bottom: 15px;
+  }
   .reviews .reviews__subtitle {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
   }
 
   .reviews .reviews__item.with-img {

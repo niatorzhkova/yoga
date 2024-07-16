@@ -585,10 +585,13 @@ section.reviews {
 @media (min-width: 1920px) {
   .section.clients,
   section.learn,
-  section.programme,
   section.reviews {
     padding: 125px 0;
     gap: 62px;
+  }
+
+  .section.programme {
+    padding: 120px 0;
   }
 
   section.gallery {

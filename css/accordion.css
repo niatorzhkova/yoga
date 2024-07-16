@@ -106,8 +106,3 @@
     padding: 13px;
   }
 }
-@media (min-width: 1920px) {
-  .accordion__button {
-    padding: 10px;
-  }
-}

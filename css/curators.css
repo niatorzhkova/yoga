@@ -135,11 +135,14 @@
 
 @media (min-width: 1920px) {
   .section.curators {
-    padding: 125px 0 120px;
+    padding: 120px 0 120px;
   }
 
   .curators__item {
     padding: 35px;
     gap: 20px;
+  }
+  .curators__item-right {
+    margin-top: 5px;
   }
 }

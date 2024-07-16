@@ -161,8 +161,18 @@
 }
 
 @media (min-width: 1920px) {
+  .programme .programme-info__time {
+    margin-bottom: 20px;
+  }
+  .programme .programme-info {
+    gap: 27px;
+  }
+  .programme .standard-text-16 {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .programme .programme__title {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .programme .programme-info__extra {

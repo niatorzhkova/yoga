@@ -362,6 +362,7 @@ $(document).ready(function () {
         },
         1920: {
           items: 5,
+          margin: 20,
         },
       },
     });

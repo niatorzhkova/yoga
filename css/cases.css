@@ -211,7 +211,7 @@
 
 @media (min-width: 1920px) {
   .cases .cases__header {
-    margin-bottom: 85px;
+    margin-bottom: 90px;
   }
 
   .cases .cases__item-left {
@@ -221,5 +221,10 @@
   .cases .cases__item-middle,
   .cases .cases__item-right {
     width: 37%;
+  }
+  .cases .cases__item-left,
+  .cases .cases__item-middle,
+  .cases .cases__item-right {
+    padding: 20px;
   }
 }
