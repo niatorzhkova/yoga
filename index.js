@@ -277,17 +277,25 @@ $(document).ready(function () {
       for (let index = 0; index < data.teachers.length; index++) {
         template += `
                  <li class="teachers__item">
-<div class="teachers__item-no-hover" style="background: center / cover no-repeat url('${data.teachers[index].photo}');">
+<div class="teachers__item-no-hover" style="background: center / cover no-repeat url('${
+          data.teachers[index].photo
+        }');">
  
                        <div class="teachers__socials">
-                        <a class="icons__socials-link" href="#"
+                        <a class="icons__socials-link" href="${
+                          data.teachers[index].link.insta
+                        }"
                           ><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.3024 0H7.44423C3.33939 0 0 3.34037 0 7.44642V21.0435C0 25.1496 3.33939 28.4899 7.44423 28.4899H22.3024C26.4073 28.4899 29.7466 25.1496 29.7466 21.0435V7.44642C29.7466 3.34037 26.4073 0 22.3024 0ZM2.62609 7.44642C2.62609 4.78927 4.78786 2.62686 7.44423 2.62686H22.3024C24.9588 2.62686 27.1206 4.78927 27.1206 7.44642V21.0435C27.1206 23.7007 24.9588 25.8631 22.3024 25.8631H7.44423C4.78786 25.8631 2.62609 23.7007 2.62609 21.0435V7.44642Z" fill="white"/>
 <path d="M14.8736 21.1698C18.6908 21.1698 21.798 18.0633 21.798 14.2433C21.798 10.4234 18.6925 7.31689 14.8736 7.31689C11.0548 7.31689 7.94922 10.4234 7.94922 14.2433C7.94922 18.0633 11.0548 21.1698 14.8736 21.1698ZM14.8736 9.94544C17.244 9.94544 19.1719 11.8739 19.1719 14.245C19.1719 16.6161 17.244 18.5446 14.8736 18.5446C12.5032 18.5446 10.5753 16.6161 10.5753 14.245C10.5753 11.8739 12.5032 9.94544 14.8736 9.94544Z" fill="white"/>
 <path d="M22.4389 8.43609C23.4668 8.43609 24.3046 7.59973 24.3046 6.56985C24.3046 5.53997 23.4685 4.70361 22.4389 4.70361C21.4093 4.70361 20.5732 5.53997 20.5732 6.56985C20.5732 7.59973 21.4093 8.43609 22.4389 8.43609Z" fill="white"/>
 </svg>
 </a>
-                        <a class="icons__socials-link" href="#"
+                        <a class="icons__socials-link ${
+                          data.teachers[index].link.youtube
+                            ? ""
+                            : "display-none"
+                        }" href="${data.teachers[index].link.youtube}"
                           ><svg
                             width="31"
                             height="22"
@@ -301,16 +309,54 @@ $(document).ready(function () {
                             />
                           </svg></a>
                       </div>
-                      <div class="teachers__item-info"><div class="teachers__item-name condensed">${data.teachers[index].name}</div>
-                      <div class="teachers__item-info-btn condensed"><button data-key=${data.teachers[index].id} class="fullInfo"></button></div>
-                      <div class="teachers__item-desc condensed">${data.teachers[index].shortDesc}</div></div>
+                      <div class="teachers__item-info"><div class="teachers__item-name condensed">${
+                        data.teachers[index].name
+                      }</div>
+                      <div class="teachers__item-info-btn condensed"><button data-key=${
+                        data.teachers[index].id
+                      } class="fullInfo"></button></div>
+                      <div class="teachers__item-desc condensed">${
+                        data.teachers[index].shortDesc
+                      }</div></div>
                       
                     </div>
 
                     </div>
                     <div class="teachers__item-hover">
-                    <div class="teachers__item-hover__name">${data.teachers[index].name}</div>
-                    <div class="teachers__item-hover__fulldesc">${data.teachers[index].fullDesc}</div>
+                     <div class="teachers__socials">
+                        <a class="icons__socials-link" href="${
+                          data.teachers[index].link.insta
+                        }"
+                          ><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3024 0H7.44423C3.33939 0 0 3.34037 0 7.44642V21.0435C0 25.1496 3.33939 28.4899 7.44423 28.4899H22.3024C26.4073 28.4899 29.7466 25.1496 29.7466 21.0435V7.44642C29.7466 3.34037 26.4073 0 22.3024 0ZM2.62609 7.44642C2.62609 4.78927 4.78786 2.62686 7.44423 2.62686H22.3024C24.9588 2.62686 27.1206 4.78927 27.1206 7.44642V21.0435C27.1206 23.7007 24.9588 25.8631 22.3024 25.8631H7.44423C4.78786 25.8631 2.62609 23.7007 2.62609 21.0435V7.44642Z" fill="white"/>
+<path d="M14.8736 21.1698C18.6908 21.1698 21.798 18.0633 21.798 14.2433C21.798 10.4234 18.6925 7.31689 14.8736 7.31689C11.0548 7.31689 7.94922 10.4234 7.94922 14.2433C7.94922 18.0633 11.0548 21.1698 14.8736 21.1698ZM14.8736 9.94544C17.244 9.94544 19.1719 11.8739 19.1719 14.245C19.1719 16.6161 17.244 18.5446 14.8736 18.5446C12.5032 18.5446 10.5753 16.6161 10.5753 14.245C10.5753 11.8739 12.5032 9.94544 14.8736 9.94544Z" fill="white"/>
+<path d="M22.4389 8.43609C23.4668 8.43609 24.3046 7.59973 24.3046 6.56985C24.3046 5.53997 23.4685 4.70361 22.4389 4.70361C21.4093 4.70361 20.5732 5.53997 20.5732 6.56985C20.5732 7.59973 21.4093 8.43609 22.4389 8.43609Z" fill="white"/>
+</svg>
+</a>
+                        <a class="icons__socials-link ${
+                          data.teachers[index].link.youtube
+                            ? ""
+                            : "display-none"
+                        }" href="${data.teachers[index].link.youtube}"
+                          ><svg
+                            width="31"
+                            height="22"
+                            viewBox="0 0 31 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M30.4134 5.73507C30.225 3.91595 29.8196 1.905 28.3274 0.848198C27.1716 0.0286711 25.6525 -0.00162611 24.2343 5.6695e-05C21.2364 5.6695e-05 18.2368 0.00511169 15.239 0.0067945C12.3555 0.0101601 9.47199 0.0118409 6.58851 0.0152065C5.38398 0.0152065 4.21308 -0.07735 3.09435 0.44432C2.13375 0.891947 1.38175 1.74345 0.929211 2.69087C0.301708 4.00851 0.170494 5.50116 0.0947903 6.95847C-0.0448416 9.61226 -0.0297008 12.2728 0.136848 14.9249C0.259657 16.8601 0.57088 18.999 2.06646 20.2325C3.39212 21.3246 5.26284 21.3785 6.98217 21.3801C12.4396 21.3852 17.8987 21.3902 23.3578 21.3936C24.0576 21.3953 24.7878 21.3818 25.5011 21.3044C26.9041 21.153 28.2415 20.7508 29.1433 19.7108C30.0534 18.6624 30.2873 17.2034 30.4252 15.8218C30.7617 12.4697 30.7583 9.08554 30.4134 5.73507ZM12.0829 15.3961V5.99758L20.2186 10.696L12.0829 15.3961Z"
+                              fill="white"
+                            />
+                          </svg></a>
+                      </div>
+                    <div class="teachers__item-hover__name">${
+                      data.teachers[index].name
+                    }</div>
+                    <div class="teachers__item-hover__fulldesc">${
+                      data.teachers[index].fullDesc
+                    }</div>
                     </div>
                   </li>  
        `;

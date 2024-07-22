@@ -115,8 +115,8 @@
 
   .author__photo {
     margin-top: 0;
-    max-width: 615px;
-    width: 615px;
+    max-width: 515px;
+    width: 515px;
     overflow: hidden;
     border-radius: 32px;
     z-index: 1;
@@ -174,7 +174,7 @@
   .author__photo-block::before {
     content: "";
     background: url("../images/author/leaves-left.svg") no-repeat;
-    left: -135px;
+    left: -129px;
     top: 65px;
     position: absolute;
     display: inline-block;
@@ -191,5 +191,11 @@
   .author__top {
     -ms-flex-preferred-size: 590px;
     flex-basis: 590px;
+  }
+}
+@media (min-width: 1920px) {
+  .author__photo {
+    max-width: 615px;
+    width: 615px;
   }
 }

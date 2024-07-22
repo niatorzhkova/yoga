@@ -1089,3 +1089,7 @@ section.reviews {
 .modal-component-info .modal__content {
   width: 93%;
 }
+
+.display-none {
+  display: none;
+}
