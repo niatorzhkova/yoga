@@ -119,20 +119,24 @@ p {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   p {
     font-size: 18px;
   }
 }
 
 .page {
-  background-color: #fff;
+  background-color: #fffbf0;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .page {
     padding: 15px;
   }
@@ -185,7 +189,9 @@ p {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .section {
     padding: 100px 0 20px;
   }
@@ -348,7 +354,9 @@ p {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .rectangle__button {
     border: 1px solid #fff;
     font-size: 20px;
@@ -394,7 +402,9 @@ p {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .rectangle__button svg {
     font-size: 50px;
     width: 50px;
@@ -582,7 +592,9 @@ section.reviews {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .section.clients,
   section.learn,
   section.reviews {
@@ -765,7 +777,9 @@ section.reviews {
     height: 450px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px),
+    (min-width: 1440px) and (min-resolution: 2dppx),
+    (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
     .video-modal-component {
       width: 1000px;
       height: 562px;
@@ -978,6 +992,7 @@ section.reviews {
 
   .standard-text {
     font-size: 20px;
+    line-height: 28px;
   }
 
   .dark-bg-section.hero-section {
@@ -1021,7 +1036,9 @@ section.reviews {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .section.cases {
     padding-top: 120px;
     padding-bottom: 115px;
@@ -1031,16 +1048,17 @@ section.reviews {
     padding-top: 120px;
   }
 
-  .dark-bg-section.with-stars {
-    background: url(./images/icons/star.svg) 14% 8%/7% no-repeat,
-      url(./images/icons/star.svg) 96% 32%/12% no-repeat, #22221f;
-  }
-
   .section.diagnostics {
     padding-top: 195px;
   }
 }
 
+@media (min-width: 1920px) {
+  .dark-bg-section.with-stars {
+    background: url(./images/icons/star.svg) 14% 8%/7% no-repeat,
+      url(./images/icons/star.svg) 96% 32%/12% no-repeat, #22221f;
+  }
+}
 .modal__close-info {
   background: #22221f;
   width: 40px;

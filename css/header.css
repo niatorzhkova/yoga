@@ -76,7 +76,9 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .menu__item {
     font-size: 20px;
     /* padding: 37px 0; */
@@ -278,7 +280,9 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .hamburger-header {
     padding: 16px 32px 0;
   }

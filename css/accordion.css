@@ -98,9 +98,9 @@
   }
   .accordion__header-left {
     gap: 15px;
-    -webkit-box-align: unset;
+    /* -webkit-box-align: unset;
     -ms-flex-align: unset;
-    align-items: unset;
+    align-items: unset; */
   }
   .accordion__button {
     padding: 13px;

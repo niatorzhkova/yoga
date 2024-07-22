@@ -1,9 +1,17 @@
-// Клик на конпку Записаться
+// Клик на кнопку Записаться
 
 const enrollBtn = document.querySelector(".enroll-btn");
 
 enrollBtn.addEventListener("click", function () {
-  window.open("https://forms.gle/B6aA4GJ9jTXDMhjk9 ", "_blank");
+  window.open("https://forms.gle/B6aA4GJ9jTXDMhjk9", "_blank");
+});
+
+// Клик на кнопку Все отызывы
+
+const reviewsBtn = document.querySelector(".all-reviews");
+
+reviewsBtn.addEventListener("click", function () {
+  window.open("https://mycalm.space/feedback ", "_blank");
 });
 
 // Youtube
@@ -19,7 +27,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     height: "100%",
     width: "100%",
-    videoId: "eqvA79jRSCU",
+    // videoId: "eqvA79jRSCU",
   });
 }
 

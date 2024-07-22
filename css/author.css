@@ -115,8 +115,8 @@
 
   .author__photo {
     margin-top: 0;
-    max-width: 626px;
-    width: 626px;
+    max-width: 615px;
+    width: 615px;
     overflow: hidden;
     border-radius: 32px;
     z-index: 1;
@@ -157,12 +157,20 @@
   }
 
   .author__top {
-    -ms-flex-preferred-size: 32%;
-    flex-basis: 32%;
+    -ms-flex-preferred-size: 399px;
+    flex-basis: 399px;
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
+  .author__photo-block::after {
+    right: -160px;
+    bottom: -40px;
+    background-size: 80%;
+  }
+
   .author__photo-block::before {
     content: "";
     background: url("../images/author/leaves-left.svg") no-repeat;
@@ -178,10 +186,10 @@
   }
 
   .author__block {
-    gap: 140px;
+    gap: 150px;
   }
   .author__top {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 590px;
+    flex-basis: 590px;
   }
 }

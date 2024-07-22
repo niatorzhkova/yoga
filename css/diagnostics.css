@@ -1,5 +1,7 @@
 .diagnostics .diagnostics__right {
   max-width: 699px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .diagnostics .diagnostics__block {
@@ -109,6 +111,7 @@
 
   .diagnostics .diagnostics__right {
     max-width: 632px;
+    border-radius: 24px;
   }
 
   .diagnostics .diagnostics__button {
@@ -121,7 +124,9 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .diagnostics .diagnostics__right {
     max-width: 699px;
   }

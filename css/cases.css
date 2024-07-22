@@ -11,7 +11,9 @@
   overflow: hidden;
   margin-bottom: 18px;
 }
-
+.cases .cases__item-photo img {
+  object-fit: cover;
+}
 .cases .cases__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +127,7 @@
   margin-bottom: 12px;
   font-size: 24px;
   font-weight: 500;
+  text-align: center;
 }
 
 .cases .cases__item-desc {
@@ -209,7 +212,9 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px),
+  (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
   .cases .cases__header {
     margin-bottom: 90px;
   }
