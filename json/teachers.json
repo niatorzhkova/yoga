@@ -8,7 +8,7 @@
       "fullDesc": "Преподаватель йоги и медитации. 20 лет личной практики. Эксперт в сфере онлайн образования, предприниматель, наставник учителей йоги. Автор первого профессионального подкаста “Йога Тичер”. <br/><br/>Спикер на конференции “Йога Журнал”, преподаватель в YTTC, ведущий тренер в FitStars.",
       "link": {
         "insta": "https://www.instagram.com/kovaldn/",
-        "youtube": "https://youtu.be/xYN2BI1Lwjs"
+        "youtube": "https://www.youtube.com/embed/xYN2BI1Lwjs?si=TtialvGKWY0QN-Q7"
       }
     },
     {
@@ -19,7 +19,7 @@
       "fullDesc": "За 14 лет провёл более 7 тыс. занятий по йоге. Выпустил 4 потока преподавательских курсов. Организатор йога туров и ретритов.",
       "link": {
         "insta": "https://www.instagram.com/evgeniy_ulitin/",
-        "youtube": "https://youtu.be/bN3T2jpKdgg?si=otpHIsySHKTeJgoA"
+        "youtube": "https://www.youtube.com/embed/bN3T2jpKdgg?si=7TKGJk7G3Uc_eRrw"
       }
     },
     {
@@ -30,7 +30,7 @@
       "fullDesc": "Менеджер проектов и методист образовательных программ по йоге. Организовала более 70 йога-событий в России, Беларуси, Украине и Грузии. Руководила известными йога-проектами: POSTYOGA, TITOV.YOGA, Ashtanga Pillars, Ashtanga New Wave. Консультирует преподавателей йоги по стратегии развития.",
       "link": {
         "insta": "https://www.instagram.com/katyosokina/",
-        "youtube": "https://youtu.be/zDzPRjSRu1w"
+        "youtube": "https://www.youtube.com/embed/zDzPRjSRu1w?si=ZF-Q-0eK3LJ8Debj"
       }
     },
     {
@@ -51,7 +51,18 @@
       "fullDesc": "Трансформационный Коуч Международного уровня, сертифицированный ICF (Международной Федерацией Коучинга), Член Федерации профессиональных коучей и наставников, выпускница Академии Экспоненциального Коучинга (Канадская федерация коучинга).<br/><br/>Мария больше 15 лет работает с людьми (Менеджмент, HR, Консалтинг), обучалась в магистратуре на психолога.",
       "link": {
         "insta": "https://www.instagram.com/masha_nis/",
-        "youtube": "https://youtu.be/elN6S62VRqw?si=s142sYTkzX4DGScv"
+        "youtube": "https://www.youtube.com/embed/elN6S62VRqw?si=f1Ov2hSehsnw6Mdz"
+      }
+    },
+    {
+      "id": 6,
+      "photo": "",
+      "name": "",
+      "shortDesc": "",
+      "fullDesc": "",
+      "link": {
+        "insta": "",
+        "youtube": ""
       }
     }
   ]

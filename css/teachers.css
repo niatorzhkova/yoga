@@ -308,3 +308,7 @@
 .teachers .teachers__item:hover .teachers__socials {
   display: flex;
 }
+
+.teachers__block .owl-item:last-child {
+  display: none;
+}
