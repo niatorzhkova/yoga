@@ -265,7 +265,6 @@ try {
         margin: 0,
         dots: false,
         touchDrag: true,
-        // autoplay: 0.5,
         autoplayHoverPause: true,
         responsive: {
           0: {
@@ -418,7 +417,6 @@ try {
         margin: 15,
         dots: false,
         touchDrag: true,
-        // autoplay: 0.5,
         autoplayHoverPause: true,
         autoWidth: true,
         responsive: {
